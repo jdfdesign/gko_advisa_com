@@ -59,8 +59,7 @@ $altFontFamily:         $serifFontFamily;// !default
 
 $headingsFontFamily:    "ambroise-firmin-std", Georgia, "Times New Roman", Times, serif;// !default // empty to use BS default, @baseFontFamily
 $headingsFontWeight:    bold;// !default    // instead of browser default, bold
-$headingsColor:         $white;// !default // empty to use BS default, @textColor
-
+$headingsColor:         #020031;// !default // empty to use BS default, @textColor
 
 // Tables
 // -------------------------
@@ -150,11 +149,11 @@ $hrBorder:              $grayLighter;// !default
 // Navbar
 // -------------------------
 $navbarHeight:                    40px;// !default
-$navbarBackground:                $lightBrown;// !default
-$navbarBackgroundHighlight:       $lightBrown;// !default
+$navbarBackground:                #020031;// !default
+$navbarBackgroundHighlight:       #6d3353;// !default
 
-$navbarText:                      $textColor;// !default
-$navbarLinkColor:                 $linkColor;// !default
+$navbarText:                      $white;// !default
+$navbarLinkColor:                 $white;// !default
 $navbarLinkColorHover:            $linkColorHover;// !default
 $navbarLinkColorActive:           $navbarLinkColorHover;// !default
 $navbarLinkBackgroundHover:       transparent;// !default
@@ -224,9 +223,11 @@ body {
 }
 #wrapper-wide-body {
 	max-width: 980px;
+	@include center-block();
 	border-top: 8px solid $white;
 }
 .page-title {
+	margin-top: 32px;
 	font-weight: normal;
 	margin-bottom: $baseLineHeight;
 	letter-spacing: 4px;
@@ -264,8 +265,8 @@ body {
 .navbar-inner {
 	padding: 0;
 	position: relative;
-	background-image: asset-url("horizontal/images/hexabump.png", 'image');
-	background-repeat: repeat;
+	//background-image: asset-url("horizontal/images/hexabump.png", 'image');
+	//background-repeat: repeat;
 }
 
 .navbar .brand {
@@ -421,7 +422,7 @@ body {
 		margin-left:40px;
 		> li {
 	    	float: none;
-			border-top: 4px solid $gray;
+			border-top: 1px solid $white;
 	  	}
 		> li > a {
 			padding: 4px 0;
@@ -431,16 +432,73 @@ body {
 		}
 	}
 
-	#main-column {
-		margin-left: 0;
-		max-height: 530px;
-		height: 530px;
-	}
-	#page-text {
-		height: 530px;
-	}
+
 	.html-text {
-		padding-left: $leftbarWidth;
+		font-size: 16px;
+		line-height: 24px;
 	}
 	
+}
+
+.masthead {
+padding: 0 0 80px;
+margin-bottom: 0;
+color: white;
+}
+
+.jumbotron {
+position: relative;
+
+color: white;
+text-align: center;
+text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+background: #020031;
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6D3353));
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 );
+-webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+}
+
+.jumbotron::after {
+content: '';
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
+opacity: .4;
+}
+
+.jumbotron .container {
+position: relative;
+z-index: 2;
+width: 100%;
+}
+
+.masthead h1 {
+font-size: 120px;
+line-height: 1;
+letter-spacing: -2px;
+color: $white;
+}
+
+.masthead p {
+font-size: 40px;
+font-weight: 200;
+line-height: 1.25;
+}
+
+.jumbotron p {
+font-size: 24px;
+font-weight: 300;
+line-height: 30px;
+margin-bottom: 30px;
+}
+
+.masthead-links {
+margin: 0;
+list-style: none;
 }
