@@ -460,7 +460,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: "ambroise-firmin-std", Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  color: white;
+  color: #020031;
   text-rendering: optimizelegibility;
 }
 /* line 32, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_type.scss */
@@ -3925,15 +3925,15 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #e8e5dc;
-  background-image: -moz-linear-gradient(top, #e8e5dc, #e8e5dc);
-  background-image: -ms-linear-gradient(top, #e8e5dc, #e8e5dc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e8e5dc), to(#e8e5dc));
-  background-image: -webkit-linear-gradient(top, #e8e5dc, #e8e5dc);
-  background-image: -o-linear-gradient(top, #e8e5dc, #e8e5dc);
-  background-image: linear-gradient(top, #e8e5dc, #e8e5dc);
+  background-color: #421e45;
+  background-image: -moz-linear-gradient(top, #6d3353, #020031);
+  background-image: -ms-linear-gradient(top, #6d3353, #020031);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6d3353), to(#020031));
+  background-image: -webkit-linear-gradient(top, #6d3353, #020031);
+  background-image: -o-linear-gradient(top, #6d3353, #020031);
+  background-image: linear-gradient(top, #6d3353, #020031);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=ie-hex-str(#e8e5dc), endColorstr=ie-hex-str(#e8e5dc), GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=ie-hex-str(#6d3353), endColorstr=ie-hex-str(#020031), GradientType=0);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3954,7 +3954,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 40, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_navbar.scss */
 .navbar {
-  color: #333333;
+  color: white;
 }
 /* line 43, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_navbar.scss */
 .navbar .brand:hover {
@@ -3969,7 +3969,7 @@ input[type="submit"].btn.btn-mini {
   font-size: 20px;
   font-weight: 200;
   line-height: 1;
-  color: #f4a136;
+  color: white;
 }
 /* line 60, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_navbar.scss */
 .navbar .navbar-text {
@@ -3978,7 +3978,7 @@ input[type="submit"].btn.btn-mini {
 }
 /* line 65, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_navbar.scss */
 .navbar .navbar-link {
-  color: #f4a136;
+  color: white;
 }
 /* line 67, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_navbar.scss */
 .navbar .navbar-link:hover {
@@ -4054,8 +4054,8 @@ input[type="submit"].btn.btn-mini {
   font-weight: normal;
   line-height: 1;
   color: white;
-  background-color: white;
-  border: 1px solid #c2baa3;
+  background-color: #0700b1;
+  border: 1px solid #010018;
   -webkit-box-shadow: "inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15)";
   -moz-box-shadow: "inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15)";
   box-shadow: "inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15)";
@@ -4151,7 +4151,7 @@ input[type="submit"].btn.btn-mini {
   float: none;
   padding: 9px 10px 11px;
   line-height: 19px;
-  color: #f4a136;
+  color: white;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -4182,7 +4182,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav .active > a:hover {
   color: black;
   text-decoration: none;
-  background-color: #e8e5dc;
+  background-color: #020031;
 }
 
 /* line 239, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_navbar.scss */
@@ -4191,8 +4191,8 @@ input[type="submit"].btn.btn-mini {
   width: 1px;
   margin: 0 9px;
   overflow: hidden;
-  background-color: #e8e5dc;
-  border-right: 1px solid #e8e5dc;
+  background-color: #020031;
+  border-right: 1px solid #6d3353;
 }
 
 /* line 249, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_navbar.scss */
@@ -4208,18 +4208,18 @@ input[type="submit"].btn.btn-mini {
   padding: 7px 10px;
   margin-left: 5px;
   margin-right: 5px;
-  background-color: #e8e5dc;
-  background-image: -moz-linear-gradient(top, #e8e5dc, #e8e5dc);
-  background-image: -ms-linear-gradient(top, #e8e5dc, #e8e5dc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e8e5dc), to(#e8e5dc));
-  background-image: -webkit-linear-gradient(top, #e8e5dc, #e8e5dc);
-  background-image: -o-linear-gradient(top, #e8e5dc, #e8e5dc);
-  background-image: linear-gradient(top, #e8e5dc, #e8e5dc);
+  background-color: #421e45;
+  background-image: -moz-linear-gradient(top, #6d3353, #020031);
+  background-image: -ms-linear-gradient(top, #6d3353, #020031);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6d3353), to(#020031));
+  background-image: -webkit-linear-gradient(top, #6d3353, #020031);
+  background-image: -o-linear-gradient(top, #6d3353, #020031);
+  background-image: linear-gradient(top, #6d3353, #020031);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=ie-hex-str(#e8e5dc), endColorstr=ie-hex-str(#e8e5dc), GradientType=0);
-  border-color: #e8e5dc #e8e5dc #cac3ae;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=ie-hex-str(#6d3353), endColorstr=ie-hex-str(#020031), GradientType=0);
+  border-color: #020031 #020031 black;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
-  *background-color: #e8e5dc;
+  *background-color: #020031;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   -webkit-box-shadow: "inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075)";
@@ -4228,12 +4228,12 @@ input[type="submit"].btn.btn-mini {
 }
 /* line 451, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_mixins.scss */
 .navbar .btn-navbar:hover, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
-  background-color: #e8e5dc;
-  *background-color: #dedacd;
+  background-color: #020031;
+  *background-color: #010018;
 }
 /* line 458, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_mixins.scss */
 .navbar .btn-navbar:active, .navbar .btn-navbar.active {
-  background-color: #d4cebd \9;
+  background-color: black \9;
   /* IE6-9 */
 }
 
@@ -5629,7 +5629,7 @@ that IE7/8 do not support :nth-child.
 /* line 2, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/app/assets/stylesheets/gko/_footer.scss */
 footer {
   min-height: 40px;
-  background-color: #e8e5dc;
+  background-color: #020031;
 }
 /* line 9, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/app/assets/stylesheets/gko/_footer.scss */
 footer .nav {
@@ -5649,7 +5649,7 @@ footer .nav > li > a {
   float: none;
   padding: 9px 10px 11px;
   line-height: 19px;
-  color: #f4a136;
+  color: white;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: transparent;
@@ -5703,7 +5703,7 @@ ul.nav .text {
   width: 100%;
   margin: 0;
   padding: 7px 0;
-  color: #f4a136;
+  color: white;
 }
 
 /* line 50, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/app/assets/stylesheets/gko/_default.scss */
@@ -6166,14 +6166,18 @@ aside > section {
 /*-----------------------------------------
  STRUCTURAL LAYOUT 
 ----------------------------------------- */
-/* line 225, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+/* line 224, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 #wrapper-wide-body {
   max-width: 980px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-top: 8px solid white;
 }
 
 /* line 229, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 .page-title {
+  margin-top: 32px;
   font-weight: normal;
   margin-bottom: 18px;
   letter-spacing: 4px;
@@ -6182,22 +6186,22 @@ aside > section {
   font-weight: 300;
 }
 
-/* line 238, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+/* line 239, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 #left_sidebar {
   background-color: #3b2d2c;
   max-width: 220px;
   padding: 18px;
 }
-/* line 242, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+/* line 243, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 #left_sidebar .nav > li > a {
   padding: 8px 0;
 }
-/* line 245, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+/* line 246, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 #left_sidebar .nav > li > a:hover {
   background-color: transparent;
 }
 
-/* line 252, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+/* line 253, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 #page-text {
   padding: 18px;
 }
@@ -6205,25 +6209,23 @@ aside > section {
 /*-----------------------------------------
  HEADER
 ----------------------------------------- */
-/* line 258, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+/* line 259, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 .navbar {
   margin-bottom: 0;
 }
 
-/* line 261, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+/* line 262, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 .container-fluid {
   padding: 0;
 }
 
-/* line 264, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+/* line 265, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 .navbar-inner {
   padding: 0;
   position: relative;
-  background-image: url(/assets/horizontal/images/hexabump.png);
-  background-repeat: repeat;
 }
 
-/* line 271, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+/* line 272, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 .navbar .brand {
   margin: 0;
   padding: 0;
@@ -6241,12 +6243,12 @@ aside > section {
   		
   	} */
 }
-/* line 274, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+/* line 275, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 .navbar .brand a {
   color: white;
 }
 
-/* line 292, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+/* line 293, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 .header-top {
   position: absolute;
   top: 0;
@@ -6256,7 +6258,7 @@ aside > section {
 /*-----------------------------------------
  FOOTER
 ----------------------------------------- */
-/* line 300, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+/* line 301, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
 #footer {
   padding: 18px;
 }
@@ -7241,7 +7243,7 @@ aside > section {
 
   /* line 57, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav .nav-header {
-    color: #333333;
+    color: white;
     text-shadow: none;
   }
 
@@ -7250,7 +7252,7 @@ aside > section {
   .nav-collapse .dropdown-menu a {
     padding: 6px 15px;
     font-weight: bold;
-    color: #f4a136;
+    color: white;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -7273,7 +7275,7 @@ aside > section {
   /* line 79, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
-    background-color: #e8e5dc;
+    background-color: #020031;
   }
 
   /* line 83, ../../../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4fc3a2ed6e55/gko_core/vendor/assets/stylesheets/twitter/bootstrap/_responsive-navbar.scss */
@@ -7319,8 +7321,8 @@ aside > section {
     float: none;
     padding: 9px 15px;
     margin: 9px 0;
-    border-top: 1px solid #e8e5dc;
-    border-bottom: 1px solid #e8e5dc;
+    border-top: 1px solid #020031;
+    border-bottom: 1px solid #020031;
     -webkit-box-shadow: "inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1)";
     -moz-box-shadow: "inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1)";
     box-shadow: "inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1)";
@@ -7358,29 +7360,29 @@ aside > section {
   }
 }
 @media (max-width: 767px) {
-  /* line 314, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 315, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   body {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 318, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 319, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   #page-text {
     height: auto;
   }
 }
 @media (max-width: 979px) {
-  /* line 328, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 329, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .container {
     width: auto;
   }
 
-  /* line 332, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 333, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .row-fluid {
     width: 100%;
   }
 
-  /* line 337, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 338, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   [class*="span"],
   .row-fluid [class*="span"] {
     float: none;
@@ -7389,7 +7391,7 @@ aside > section {
     margin-left: 0;
   }
 
-  /* line 343, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 344, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .navbar-inner {
     background-color: #f4a136;
     -webkit-border-radius: 0;
@@ -7401,18 +7403,18 @@ aside > section {
     padding: 0;
   }
 
-  /* line 350, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 351, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .navbar .brand {
     float: none;
     text-align: center;
   }
 
-  /* line 355, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 356, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .nav-collapse {
     background-color: #3b2d2c;
   }
 
-  /* line 360, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 361, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .nav-collapse nav,
   .nav-collapse .nav {
     *zoom: 1;
@@ -7430,19 +7432,19 @@ aside > section {
     clear: both;
   }
 
-  /* line 365, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 366, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .nav-collapse .nav > li,
   .nav-collapse .dropdown-menu li {
     margin-left: 24px;
-    border-bottom: 1px solid #f4a136;
+    border-bottom: 1px solid white;
   }
 
-  /* line 369, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 370, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .nav-collapse .dropdown-menu li:last-child {
     border-bottom: none;
   }
 
-  /* line 374, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 375, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
     font-weight: normal;
@@ -7451,19 +7453,19 @@ aside > section {
     border-radius: 0;
   }
 
-  /* line 378, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 379, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .nav-collapse .dropdown-menu a:hover {
     background-color: transparent;
     color: black;
   }
 
-  /* line 383, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 384, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   #left_sidebar {
     display: none;
   }
 }
 @media (min-width: 980px) {
-  /* line 390, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 391, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .brand {
     position: absolute;
     left: 36px;
@@ -7478,7 +7480,7 @@ aside > section {
     font-size: 32px;
   }
 
-  /* line 404, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 405, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .navbar ul.nav > li > a {
     text-transform: uppercase;
     font-size: 10px;
@@ -7487,45 +7489,103 @@ aside > section {
     padding: 3px 15px;
   }
 
-  /* line 412, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 413, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   #primary-menu {
     float: left;
     margin-top: 40px;
     margin-bottom: 40px;
   }
 
-  /* line 419, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 420, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   #primary-menu ul.nav {
     margin-left: 40px;
   }
-  /* line 422, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 423, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   #primary-menu ul.nav > li {
     float: none;
-    border-top: 4px solid #555555;
+    border-top: 1px solid white;
   }
-  /* line 426, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 427, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   #primary-menu ul.nav > li > a {
     padding: 4px 0;
   }
-  /* line 429, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 430, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   #primary-menu ul.nav:first-child {
     margin-left: 220px;
   }
 
-  /* line 434, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
-  #main-column {
-    margin-left: 0;
-    max-height: 530px;
-    height: 530px;
-  }
-
-  /* line 439, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
-  #page-text {
-    height: 530px;
-  }
-
-  /* line 442, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+  /* line 436, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
   .html-text {
-    padding-left: 220px;
+    font-size: 16px;
+    line-height: 24px;
   }
+}
+/* line 443, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+.masthead {
+  padding: 0 0 80px;
+  margin-bottom: 0;
+  color: white;
+}
+
+/* line 449, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+.jumbotron {
+  position: relative;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+  background: #020031;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #020031), color-stop(100%, #6d3353));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#020031', endColorstr='#6d3353',GradientType=1 );
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* line 463, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+.jumbotron::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
+  opacity: .4;
+}
+
+/* line 475, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+.jumbotron .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* line 481, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+.masthead h1 {
+  font-size: 120px;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: white;
+}
+
+/* line 488, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+.masthead p {
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1.25;
+}
+
+/* line 494, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+.jumbotron p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 501, ../../../../app/assets/themes/financial/stylesheets/public.css.scss */
+.masthead-links {
+  margin: 0;
+  list-style: none;
 }
