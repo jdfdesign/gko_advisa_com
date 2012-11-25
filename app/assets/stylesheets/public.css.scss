@@ -1,0 +1,250 @@
+/*!
+ * Theme Based on Bootstrap v2.0.4
+ *
+ * Copyright 2012 Regis Bruggheman
+ */
+
+$navbarWidth: 220px; //! same as logo
+$themeColor: #323232;
+$themeBgColor: white;
+$mediumBrown: gray;
+$themeTextColor: #333;
+
+
+
+@mixin nav-link($borderColor) {
+	li {
+		float: none;
+		border-top: 1px solid lighten($borderColor, 10%);
+		border-bottom: 1px solid darken($borderColor, 10%);
+		&:first-child {
+			border-top: none;
+		};
+		&:last-child {
+			border-bottom: none;
+		};
+		a {
+			font-size: 12px;
+			text-transform: uppercase;
+			text-align: left;
+			text-shadow: none;
+			font-family: $altFontFamily;
+			font-weight: 300;
+			padding: 7px 10px 9px;
+			line-height: 19px;
+		}
+	}
+
+}
+
+
+@import "variables";
+@import "twitter/bootstrap";
+@import "gko/public/base";
+@import "galleria";
+@import "supersized";
+
+/*-----------------------------------------
+ STRUCTURAL LAYOUT 
+----------------------------------------- */
+* {
+	@include box-sizing(border-box);
+}
+.page-title {
+	font-weight: normal;
+	margin-bottom: $baseLineHeight;
+	text-transform: uppercase;
+}
+#left-sidebar {
+	display: none;
+}
+.html-text {
+	font-weight: 300;
+}
+#main-container {
+	background-color: $themeBgColor;
+	min-height: 100%;
+}
+/*-----------------------------------------
+ HEADER
+----------------------------------------- */
+.navbar {
+	background-color: $themeColor;
+	margin-bottom: 0;
+	.brand {
+		margin: 39px 0 0 0;
+		padding: 0;
+		background-color: $themeColor;
+		text-align: center;
+		a {
+			padding: 0;
+			margin: 0 auto;
+			//background: $themeColor image-url("logo.png") center center no-repeat;
+			//background-size: contain;
+			cursor: pointer;
+			text-decoration: none;
+			display: block;
+			width: $navbarWidth;
+			height: 120px;
+			//@include hide-text;
+		}
+	}
+	.btn-navbar {
+		text-shadow: none;
+		@include button-background($themeTextColor, $mediumBrown);
+
+	}
+	ul.nav {
+		@include center-block();
+		left: auto;
+		float: none;
+		@include nav-link($themeColor);
+	}
+}
+
+
+/*-----------------------------------------
+ FOOTER
+----------------------------------------- */
+
+footer {
+	padding: 0 20px;
+	nav {
+		text-align: center;
+	}
+	ul.nav {
+		@include center-block();
+		left: auto;
+		float: none;
+	}
+	ul.nav > li > a {
+		text-shadow: none;
+		font-size: 14px;
+	}
+}
+
+#copyright-container {
+	padding: 0 30px;
+}
+#site-by {
+	font-size: 10px;
+	text-align: center;;
+}
+/*-----------------------------------------
+ CONTENT
+----------------------------------------- */
+
+/*-----------------------------------------
+ RESPONSIVE
+----------------------------------------- */
+@import "twitter/bootstrap/responsive";
+
+@media (max-width: 767px) {
+	body {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.container-fluid {
+		padding: 20px;
+		@include box-sizing(border-box);
+	}
+}	
+@media (max-width: 979px) {
+	.navbar {
+		.brand {
+			float: none;
+			
+			margin: 39px 0 0 0;
+		}	
+	}
+	
+	#locales-menu {
+		position: absolute;
+		top: 39 + ($baseLineHeight / 2);
+		right: $baseLineHeight / 2;
+	}
+}
+@media (min-width: 980px) {
+
+	/*-- LAYOUT
+	----------------------------------------- */
+	
+	body {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.container-fluid {
+		padding: 0;
+	}
+
+	#main-container {
+		position: absolute;
+		left: $navbarWidth;
+		min-height: 100%;
+		max-width: 800px + ($baseLineHeight * 2);
+	}
+	
+	#main {
+		padding: $baseLineHeight * 2;
+		@include box-sizing(border-box);
+	}
+	
+	/*-- HEADER
+	----------------------------------------- */
+	.navbar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		min-height: 100%;
+		z-index: 10;
+		min-width: $navbarWidth;
+		width: $navbarWidth;
+		margin-bottom: 0;
+		.brand {
+			//margin: 0;
+		}
+		ul.nav > li > a {
+			text-align: center;
+		}
+		.nav-collapse {
+			position: absolute;
+			top: 200px;
+			left: 0;
+			right: 0;
+		}
+		.footer-nav {
+			position: absolute;
+			bottom: 30px;
+			left: 0;
+			right: 0;
+		}
+	}
+	
+	.dropdown-menu.subnav {
+		position: fixed;
+		left: $navbarWidth;
+		top: 0;
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+	//	min-width: $navbarWidth;
+		border: none;
+		border-right: 1px solid $mediumBrown;
+		background-color: $themeTextColor;
+		z-index: 2;
+		margin: 0;
+		padding: 200px 0;
+		@include box-sizing(border-box);
+		@include nav-link($themeTextColor);
+		@include box-shadow(none);
+		@include border-radius(0);
+		li a {
+			color: $navbarLinkColor;
+			&:hover {
+				color: $navbarLinkColorHover;
+			}
+		}
+	}
+}
