@@ -171,22 +171,22 @@ textarea {
 /* line 9, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/scaffolding.scss */
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color: white;
+  background-color: whiteSmoke;
 }
 
 /* line 22, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/scaffolding.scss */
 a {
-  color: #0088cc;
+  color: #323232;
   text-decoration: none;
 }
 
 /* line 26, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/scaffolding.scss */
 a:hover {
-  color: #005580;
+  color: #0c0c0c;
   text-decoration: underline;
 }
 
@@ -1046,7 +1046,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* line 55, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/forms.scss */
@@ -3078,14 +3078,14 @@ table th[class*="span"],
 .dropdown-submenu:hover > a {
   text-decoration: none;
   color: white;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(top, #0088cc, #0077b3);
+  background-color: #2c2c2c;
+  background-image: -moz-linear-gradient(top, #323232, #252525);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#323232), to(#252525));
+  background-image: -webkit-linear-gradient(top, #323232, #252525);
+  background-image: -o-linear-gradient(top, #323232, #252525);
+  background-image: linear-gradient(top, #323232, #252525);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie_hex_str(#0088cc)', endColorstr='ie_hex_str(#0077b3)', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie_hex_str(#323232)', endColorstr='ie_hex_str(#252525)', GradientType=0);
 }
 
 /* line 99, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/dropdowns.scss */
@@ -3094,14 +3094,14 @@ table th[class*="span"],
   color: #333333;
   text-decoration: none;
   outline: 0;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(top, #0088cc, #0077b3);
+  background-color: #2c2c2c;
+  background-image: -moz-linear-gradient(top, #323232, #252525);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#323232), to(#252525));
+  background-image: -webkit-linear-gradient(top, #323232, #252525);
+  background-image: -o-linear-gradient(top, #323232, #252525);
+  background-image: linear-gradient(top, #323232, #252525);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie_hex_str(#0088cc)', endColorstr='ie_hex_str(#0077b3)', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie_hex_str(#323232)', endColorstr='ie_hex_str(#252525)', GradientType=0);
 }
 
 /* line 110, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/dropdowns.scss */
@@ -3497,29 +3497,29 @@ input[type="button"].btn-block {
 .btn-primary {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #0073cc;
-  background-image: -moz-linear-gradient(top, #0088cc, #0055cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0055cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0055cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0055cc);
-  background-image: linear-gradient(top, #0088cc, #0055cc);
+  background-color: #323232;
+  background-image: -moz-linear-gradient(top, #323232, #323232);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#323232), to(#323232));
+  background-image: -webkit-linear-gradient(top, #323232, #323232);
+  background-image: -o-linear-gradient(top, #323232, #323232);
+  background-image: linear-gradient(top, #323232, #323232);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie_hex_str(#0088cc)', endColorstr='ie_hex_str(#0055cc)', GradientType=0);
-  border-color: #0055cc #0055cc #003580;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie_hex_str(#323232)', endColorstr='ie_hex_str(#323232)', GradientType=0);
+  border-color: #323232 #323232 #0c0c0c;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
-  *background-color: #0055cc;
+  *background-color: #323232;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 /* line 523, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/mixins.scss */
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
   color: white;
-  background-color: #0055cc;
-  *background-color: #004ab3;
+  background-color: #323232;
+  *background-color: #252525;
 }
 /* line 531, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/mixins.scss */
 .btn-primary:active, .btn-primary.active {
-  background-color: #004099 \9;
+  background-color: #191919 \9;
 }
 
 /* line 155, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/buttons.scss */
@@ -3713,7 +3713,7 @@ input[type="submit"].btn.btn-mini {
 .btn-link {
   border-color: transparent;
   cursor: pointer;
-  color: #0088cc;
+  color: #323232;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -3721,7 +3721,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 224, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/buttons.scss */
 .btn-link:hover {
-  color: #005580;
+  color: #0c0c0c;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3905,7 +3905,7 @@ input[type="submit"].btn.btn-mini {
 }
 /* line 155, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/button-groups.scss */
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #0055cc;
+  background-color: #323232;
 }
 /* line 158, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/button-groups.scss */
 .btn-group.open .btn-warning.dropdown-toggle {
@@ -4146,7 +4146,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:hover {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #0088cc;
+  background-color: #323232;
 }
 
 /* line 71, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navs.scss */
@@ -4229,7 +4229,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
   color: #555555;
-  background-color: white;
+  background-color: whiteSmoke;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4250,7 +4250,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: white;
-  background-color: #0088cc;
+  background-color: #323232;
 }
 
 /* line 159, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navs.scss */
@@ -4328,15 +4328,15 @@ input[type="submit"].btn.btn-mini {
 
 /* line 208, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navs.scss */
 .nav .dropdown-toggle .caret {
-  border-top-color: #0088cc;
-  border-bottom-color: #0088cc;
+  border-top-color: #323232;
+  border-bottom-color: #323232;
   margin-top: 6px;
 }
 
 /* line 213, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navs.scss */
 .nav .dropdown-toggle:hover .caret {
-  border-top-color: #005580;
-  border-bottom-color: #005580;
+  border-top-color: #0c0c0c;
+  border-bottom-color: #0c0c0c;
 }
 
 /* move down carets for tabs */
@@ -4828,7 +4828,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > .active > a:focus {
   color: white;
   text-decoration: none;
-  background-color: #0081c2;
+  background-color: #323232;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -4934,7 +4934,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #0081c2;
+  background-color: #323232;
   color: white;
 }
 
@@ -5772,7 +5772,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 37, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/thumbnails.scss */
 a.thumbnail:hover {
-  border-color: #0088cc;
+  border-color: #323232;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -7169,25 +7169,25 @@ img {
   display: inline;
 }
 
-/* line 50, ../../app/assets/stylesheets/public.css.scss */
+/* line 70, ../../app/assets/stylesheets/public.css.scss */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-/* line 53, ../../app/assets/stylesheets/public.css.scss */
+/* line 73, ../../app/assets/stylesheets/public.css.scss */
 h2 {
   font-size: 22px;
   line-height: 26px;
 }
 
-/* line 57, ../../app/assets/stylesheets/public.css.scss */
+/* line 77, ../../app/assets/stylesheets/public.css.scss */
 h3 {
   font-size: 18px;
   line-height: 22px;
   margin-top: 18px;
 }
 
-/* line 63, ../../app/assets/stylesheets/public.css.scss */
+/* line 83, ../../app/assets/stylesheets/public.css.scss */
 .html-text h2, .html-text h3, .html-text h4, .html-text h5, .html-text h6 {
   margin-bottom: 0;
 }
@@ -7195,69 +7195,73 @@ h3 {
 /*-----------------------------------------
  STRUCTURAL LAYOUT 
 ----------------------------------------- */
-/* line 70, ../../app/assets/stylesheets/public.css.scss */
+/* line 90, ../../app/assets/stylesheets/public.css.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 73, ../../app/assets/stylesheets/public.css.scss */
+/* line 93, ../../app/assets/stylesheets/public.css.scss */
 a:focus {
   outline: 0;
 }
 
-/* line 76, ../../app/assets/stylesheets/public.css.scss */
+/* line 96, ../../app/assets/stylesheets/public.css.scss */
 .page-title {
   font-weight: normal;
   margin-bottom: 18px;
   text-transform: uppercase;
 }
 
-/* line 81, ../../app/assets/stylesheets/public.css.scss */
+/* line 101, ../../app/assets/stylesheets/public.css.scss */
 #left-sidebar {
   display: none;
 }
 
-/* line 84, ../../app/assets/stylesheets/public.css.scss */
+/* line 104, ../../app/assets/stylesheets/public.css.scss */
 .html-text {
   font-weight: 300;
 }
 
-/* line 87, ../../app/assets/stylesheets/public.css.scss */
+/* line 107, ../../app/assets/stylesheets/public.css.scss */
 #main-container {
-  background-color: white;
+  background: white;
+  background-color: rgba(255, 255, 255, 0.9);
   min-height: 100%;
 }
 
 /*-----------------------------------------
  HEADER
 ----------------------------------------- */
-/* line 94, ../../app/assets/stylesheets/public.css.scss */
+/* line 115, ../../app/assets/stylesheets/public.css.scss */
 .navbar {
-  background-color: #323232;
+  background-color: #2f2f2f;
   margin-bottom: 0;
 }
-/* line 97, ../../app/assets/stylesheets/public.css.scss */
+/* line 118, ../../app/assets/stylesheets/public.css.scss */
 .navbar .brand {
-  margin: 39px 0 0 0;
+  margin: 0;
   padding: 0;
-  background-color: #323232;
+  background-color: #59cdfe;
   text-align: center;
 }
-/* line 102, ../../app/assets/stylesheets/public.css.scss */
+/* line 124, ../../app/assets/stylesheets/public.css.scss */
 .navbar .brand a {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   cursor: pointer;
   text-decoration: none;
   display: block;
-  width: 220px;
-  height: 120px;
+  width: 180px;
+  height: 90px;
+  line-height: 90px;
   text-transform: uppercase;
   font-family: "ambroise-std", Georgia, "Times New Roman", Times, serif;
+  font-size: 34px;
+  color: white;
 }
-/* line 116, ../../app/assets/stylesheets/public.css.scss */
+/* line 139, ../../app/assets/stylesheets/public.css.scss */
 .navbar .btn-navbar {
   text-shadow: none;
   color: white;
@@ -7286,7 +7290,7 @@ a:focus {
 .navbar .btn-navbar:active, .navbar .btn-navbar.active {
   background-color: #676767 \9;
 }
-/* line 121, ../../app/assets/stylesheets/public.css.scss */
+/* line 144, ../../app/assets/stylesheets/public.css.scss */
 .navbar ul.nav {
   display: block;
   margin-left: auto;
@@ -7294,23 +7298,15 @@ a:focus {
   left: auto;
   float: none;
 }
-/* line 17, ../../app/assets/stylesheets/public.css.scss */
+/* line 23, ../../app/assets/stylesheets/public.css.scss */
 .navbar ul.nav li {
   float: none;
   border-top: 1px solid #4c4c4c;
   border-bottom: 1px solid #191919;
 }
-/* line 22, ../../app/assets/stylesheets/public.css.scss */
-.navbar ul.nav li:first-child {
-  border-top: none;
-}
-/* line 25, ../../app/assets/stylesheets/public.css.scss */
-.navbar ul.nav li:last-child {
-  border-bottom: none;
-}
-/* line 28, ../../app/assets/stylesheets/public.css.scss */
+/* line 34, ../../app/assets/stylesheets/public.css.scss */
 .navbar ul.nav li a {
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
   text-align: left;
   text-shadow: none;
@@ -7320,19 +7316,50 @@ a:focus {
   line-height: 19px;
   letter-spacing: 2px;
 }
+/* line 49, ../../app/assets/stylesheets/public.css.scss */
+.navbar ul.nav li > a:hover,
+.navbar ul.nav li > a:focus, .navbar ul.nav li:hover > a {
+  background-color: #2c2c2c;
+  background-image: -moz-linear-gradient(top, #323232, #252525);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#323232), to(#252525));
+  background-image: -webkit-linear-gradient(top, #323232, #252525);
+  background-image: -o-linear-gradient(top, #323232, #252525);
+  background-image: linear-gradient(top, #323232, #252525);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie_hex_str(#323232)', endColorstr='ie_hex_str(#252525)', GradientType=0);
+}
+/* line 56, ../../app/assets/stylesheets/public.css.scss */
+.navbar ul.nav li.active > a, .navbar ul.nav li.active > a:hover {
+  background-color: #2c2c2c;
+  background-image: -moz-linear-gradient(top, #323232, #252525);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#323232), to(#252525));
+  background-image: -webkit-linear-gradient(top, #323232, #252525);
+  background-image: -o-linear-gradient(top, #323232, #252525);
+  background-image: linear-gradient(top, #323232, #252525);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie_hex_str(#323232)', endColorstr='ie_hex_str(#252525)', GradientType=0);
+}
+/* line 150, ../../app/assets/stylesheets/public.css.scss */
+.navbar ul.nav.pipe > li > a {
+  font-size: 13px;
+  text-transform: lowercase;
+  padding: 4px 10px 5px;
+  line-height: 15px;
+  letter-spacing: 1px;
+}
 
 /*-----------------------------------------
  FOOTER
 ----------------------------------------- */
-/* line 134, ../../app/assets/stylesheets/public.css.scss */
+/* line 164, ../../app/assets/stylesheets/public.css.scss */
 footer {
   padding: 0 20px;
 }
-/* line 136, ../../app/assets/stylesheets/public.css.scss */
+/* line 166, ../../app/assets/stylesheets/public.css.scss */
 footer nav {
   text-align: center;
 }
-/* line 139, ../../app/assets/stylesheets/public.css.scss */
+/* line 169, ../../app/assets/stylesheets/public.css.scss */
 footer ul.nav {
   display: block;
   margin-left: auto;
@@ -7340,40 +7367,53 @@ footer ul.nav {
   left: auto;
   float: none;
 }
-/* line 144, ../../app/assets/stylesheets/public.css.scss */
+/* line 174, ../../app/assets/stylesheets/public.css.scss */
 footer ul.nav > li > a {
   text-shadow: none;
   font-size: 14px;
 }
 
-/* line 150, ../../app/assets/stylesheets/public.css.scss */
+/* line 180, ../../app/assets/stylesheets/public.css.scss */
 #copyright-container {
   padding: 0 30px;
 }
 
-/* line 153, ../../app/assets/stylesheets/public.css.scss */
+/* line 183, ../../app/assets/stylesheets/public.css.scss */
 #site-by {
   font-size: 10px;
   text-align: center;
 }
 
-/* line 158, ../../app/assets/stylesheets/public.css.scss */
+/* line 188, ../../app/assets/stylesheets/public.css.scss */
 .tools-menu-container {
   position: fixed;
-  bottom: 0;
+  top: 0;
   right: 12px;
 }
-/* line 163, ../../app/assets/stylesheets/public.css.scss */
+/* line 192, ../../app/assets/stylesheets/public.css.scss */
+.tools-menu-container .nav > li {
+  float: left;
+  margin-left: 4px;
+}
+/* line 197, ../../app/assets/stylesheets/public.css.scss */
 .tools-menu-container .nav > li > a {
-  -webkit-border-radius: 6px 6px 0 0;
-  -moz-border-radius: 6px 6px 0 0;
-  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
   background-color: #333333;
   white-space: normal;
   text-align: center;
   color: #999999;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-shadow: none;
+  font-family: "ambroise-std", Georgia, "Times New Roman", Times, serif;
+  font-weight: 300;
+  padding: 7px 10px 9px;
+  line-height: 19px;
+  letter-spacing: 2px;
 }
-/* line 171, ../../app/assets/stylesheets/public.css.scss */
+/* line 213, ../../app/assets/stylesheets/public.css.scss */
 .tools-menu-container .nav > li > a.active, .tools-menu-container .nav > li > a:active, .tools-menu-container .nav > li > a:hover {
   background-color: #333333;
   color: white;
@@ -8787,13 +8827,13 @@ footer ul.nav > li > a {
   }
 }
 @media (max-width: 767px) {
-  /* line 187, ../../app/assets/stylesheets/public.css.scss */
+  /* line 229, ../../app/assets/stylesheets/public.css.scss */
   body {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  /* line 192, ../../app/assets/stylesheets/public.css.scss */
+  /* line 234, ../../app/assets/stylesheets/public.css.scss */
   .container-fluid {
     padding: 20px;
     -webkit-box-sizing: border-box;
@@ -8802,13 +8842,13 @@ footer ul.nav > li > a {
   }
 }
 @media (max-width: 979px) {
-  /* line 199, ../../app/assets/stylesheets/public.css.scss */
+  /* line 241, ../../app/assets/stylesheets/public.css.scss */
   .navbar .brand {
     float: none;
     margin: 39px 0 0 0;
   }
 
-  /* line 206, ../../app/assets/stylesheets/public.css.scss */
+  /* line 248, ../../app/assets/stylesheets/public.css.scss */
   #locales-menu {
     position: absolute;
     top: 48px;
@@ -8818,26 +8858,26 @@ footer ul.nav > li > a {
 @media (min-width: 980px) {
   /*-- LAYOUT
   ----------------------------------------- */
-  /* line 217, ../../app/assets/stylesheets/public.css.scss */
+  /* line 259, ../../app/assets/stylesheets/public.css.scss */
   body {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  /* line 222, ../../app/assets/stylesheets/public.css.scss */
+  /* line 264, ../../app/assets/stylesheets/public.css.scss */
   .container-fluid {
     padding: 0;
   }
 
-  /* line 226, ../../app/assets/stylesheets/public.css.scss */
+  /* line 268, ../../app/assets/stylesheets/public.css.scss */
   #main-container {
     position: absolute;
-    left: 220px;
+    left: 180px;
     min-height: 100%;
     max-width: 836px;
   }
 
-  /* line 233, ../../app/assets/stylesheets/public.css.scss */
+  /* line 275, ../../app/assets/stylesheets/public.css.scss */
   #main {
     padding: 36px;
     -webkit-box-sizing: border-box;
@@ -8847,52 +8887,52 @@ footer ul.nav > li > a {
 
   /*-- HEADER
   ----------------------------------------- */
-  /* line 240, ../../app/assets/stylesheets/public.css.scss */
+  /* line 282, ../../app/assets/stylesheets/public.css.scss */
   .navbar {
     position: fixed;
     top: 0;
     left: 0;
     min-height: 100%;
     z-index: 10;
-    min-width: 220px;
-    width: 220px;
+    min-width: 180px;
+    width: 180px;
     margin-bottom: 0;
   }
-  /* line 252, ../../app/assets/stylesheets/public.css.scss */
+  /* line 294, ../../app/assets/stylesheets/public.css.scss */
   .navbar ul.nav > li > a {
     text-align: center;
   }
-  /* line 255, ../../app/assets/stylesheets/public.css.scss */
+  /* line 297, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav-collapse {
     position: absolute;
     top: 200px;
     left: 0;
     right: 0;
   }
-  /* line 261, ../../app/assets/stylesheets/public.css.scss */
+  /* line 303, ../../app/assets/stylesheets/public.css.scss */
   .navbar .footer-nav {
     position: absolute;
     bottom: 30px;
     left: 0;
     right: 0;
   }
-  /* line 267, ../../app/assets/stylesheets/public.css.scss */
+  /* line 309, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav li.dropdown > .dropdown-toggle .caret {
     display: none;
   }
 
-  /* line 272, ../../app/assets/stylesheets/public.css.scss */
+  /* line 314, ../../app/assets/stylesheets/public.css.scss */
   .dropdown-menu.subnav {
     position: fixed;
-    left: 220px;
+    left: 180px;
     top: 0;
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    width: 220px;
+    width: 180px;
     border: none;
-    border-left: 1px solid gray;
-    background-color: #333333;
+    border-left: 1px solid black;
+    background-color: #323232;
     z-index: 2;
     margin: 0;
     padding: 200px 0;
@@ -8906,23 +8946,15 @@ footer ul.nav > li > a {
     -moz-border-radius: 0;
     border-radius: 0;
   }
-  /* line 17, ../../app/assets/stylesheets/public.css.scss */
+  /* line 23, ../../app/assets/stylesheets/public.css.scss */
   .dropdown-menu.subnav li {
     float: none;
     border-top: 1px solid #4d4d4d;
     border-bottom: 1px solid #1a1a1a;
   }
-  /* line 22, ../../app/assets/stylesheets/public.css.scss */
-  .dropdown-menu.subnav li:first-child {
-    border-top: none;
-  }
-  /* line 25, ../../app/assets/stylesheets/public.css.scss */
-  .dropdown-menu.subnav li:last-child {
-    border-bottom: none;
-  }
-  /* line 28, ../../app/assets/stylesheets/public.css.scss */
+  /* line 34, ../../app/assets/stylesheets/public.css.scss */
   .dropdown-menu.subnav li a {
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
     text-align: left;
     text-shadow: none;
@@ -8932,17 +8964,39 @@ footer ul.nav > li > a {
     line-height: 19px;
     letter-spacing: 2px;
   }
-  /* line 291, ../../app/assets/stylesheets/public.css.scss */
+  /* line 49, ../../app/assets/stylesheets/public.css.scss */
+  .dropdown-menu.subnav li > a:hover, .dropdown-menu.subnav li > a:focus, .dropdown-menu.subnav li:hover > a {
+    background-color: #2c2c2c;
+    background-image: -moz-linear-gradient(top, #323232, #252525);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#323232), to(#252525));
+    background-image: -webkit-linear-gradient(top, #323232, #252525);
+    background-image: -o-linear-gradient(top, #323232, #252525);
+    background-image: linear-gradient(top, #323232, #252525);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie_hex_str(#323232)', endColorstr='ie_hex_str(#252525)', GradientType=0);
+  }
+  /* line 56, ../../app/assets/stylesheets/public.css.scss */
+  .dropdown-menu.subnav li.active > a, .dropdown-menu.subnav li.active > a:hover {
+    background-color: #2c2c2c;
+    background-image: -moz-linear-gradient(top, #323232, #252525);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#323232), to(#252525));
+    background-image: -webkit-linear-gradient(top, #323232, #252525);
+    background-image: -o-linear-gradient(top, #323232, #252525);
+    background-image: linear-gradient(top, #323232, #252525);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie_hex_str(#323232)', endColorstr='ie_hex_str(#252525)', GradientType=0);
+  }
+  /* line 333, ../../app/assets/stylesheets/public.css.scss */
   .dropdown-menu.subnav li a {
     white-space: normal;
     text-align: center;
     color: #999999;
   }
-  /* line 297, ../../app/assets/stylesheets/public.css.scss */
+  /* line 339, ../../app/assets/stylesheets/public.css.scss */
   .dropdown-menu.subnav li a.active, .dropdown-menu.subnav li a:active, .dropdown-menu.subnav li a:hover {
     color: white;
   }
-  /* line 301, ../../app/assets/stylesheets/public.css.scss */
+  /* line 343, ../../app/assets/stylesheets/public.css.scss */
   .dropdown-menu.subnav li.active a {
     color: white;
   }
