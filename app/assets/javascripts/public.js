@@ -307,6 +307,7 @@ var Navigation = {
 	},
 	
 	show: function(target) {
+		Navigation.close();
 		if(target.is(":hidden")) {
 			rightPadding = target.outerWidth(true) + $navbar.outerWidth(true);
 			target.show().delay(animationSpeed).animate({

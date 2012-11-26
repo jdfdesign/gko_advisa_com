@@ -45,7 +45,7 @@ $linkColorHover:        darken($linkColor, 15%) !default;
 // Typography
 // -------------------------
 $sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$serifFontFamily:       "ambroise-std",Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          13px !default;
@@ -53,8 +53,8 @@ $baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        18px !default;
 $altFontFamily:         $serifFontFamily !default;
 
-$headingsFontFamily:    inherit !default; // empty to use BS default, @baseFontFamily
-$headingsFontWeight:    bold !default;    // instead of browser default, bold
+$headingsFontFamily:    $serifFontFamily !default; // empty to use BS default, @baseFontFamily
+$headingsFontWeight:    normal !default;    // instead of browser default, bold
 $headingsColor:         inherit !default; // empty to use BS default, @textColor
 
 
@@ -154,7 +154,7 @@ $navbarLinkColor:                 $grayLight !default;
 $navbarLinkColorHover:            $white !default;
 $navbarLinkColorActive:           $navbarLinkColorHover !default;
 $navbarLinkBackgroundHover:       transparent !default;
-$navbarLinkBackgroundActive:      $navbarBackground !default;
+$navbarLinkBackgroundActive:      #0081C2 !default;
 
 $navbarSearchBackground:          lighten($navbarBackground, 25%) !default;
 $navbarSearchBackgroundFocus:     $white !default;
