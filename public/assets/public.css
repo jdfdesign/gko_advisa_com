@@ -709,8 +709,8 @@ a.text-success:hover {
 /* line 56, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-4ae1dbeb364d/gko_core/vendor/assets/stylesheets/twitter/bootstrap/type.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 9px 0;
-  font-family: inherit;
-  font-weight: bold;
+  font-family: "ambroise-std", Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
   line-height: 18px;
   color: inherit;
   text-rendering: optimizelegibility;
@@ -4828,7 +4828,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > .active > a:focus {
   color: white;
   text-decoration: none;
-  background-color: #222222;
+  background-color: #0081c2;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -4934,7 +4934,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #222222;
+  background-color: #0081c2;
   color: white;
 }
 
@@ -7169,34 +7169,62 @@ img {
   display: inline;
 }
 
+/* line 50, ../../app/assets/stylesheets/public.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+/* line 53, ../../app/assets/stylesheets/public.css.scss */
+h2 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* line 57, ../../app/assets/stylesheets/public.css.scss */
+h3 {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 18px;
+}
+
+/* line 63, ../../app/assets/stylesheets/public.css.scss */
+.html-text h2, .html-text h3, .html-text h4, .html-text h5, .html-text h6 {
+  margin-bottom: 0;
+}
+
 /*-----------------------------------------
  STRUCTURAL LAYOUT 
 ----------------------------------------- */
-/* line 51, ../../app/assets/stylesheets/public.css.scss */
+/* line 70, ../../app/assets/stylesheets/public.css.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 54, ../../app/assets/stylesheets/public.css.scss */
+/* line 73, ../../app/assets/stylesheets/public.css.scss */
+a:focus {
+  outline: 0;
+}
+
+/* line 76, ../../app/assets/stylesheets/public.css.scss */
 .page-title {
   font-weight: normal;
   margin-bottom: 18px;
   text-transform: uppercase;
 }
 
-/* line 59, ../../app/assets/stylesheets/public.css.scss */
+/* line 81, ../../app/assets/stylesheets/public.css.scss */
 #left-sidebar {
   display: none;
 }
 
-/* line 62, ../../app/assets/stylesheets/public.css.scss */
+/* line 84, ../../app/assets/stylesheets/public.css.scss */
 .html-text {
   font-weight: 300;
 }
 
-/* line 65, ../../app/assets/stylesheets/public.css.scss */
+/* line 87, ../../app/assets/stylesheets/public.css.scss */
 #main-container {
   background-color: white;
   min-height: 100%;
@@ -7205,19 +7233,19 @@ img {
 /*-----------------------------------------
  HEADER
 ----------------------------------------- */
-/* line 72, ../../app/assets/stylesheets/public.css.scss */
+/* line 94, ../../app/assets/stylesheets/public.css.scss */
 .navbar {
   background-color: #323232;
   margin-bottom: 0;
 }
-/* line 75, ../../app/assets/stylesheets/public.css.scss */
+/* line 97, ../../app/assets/stylesheets/public.css.scss */
 .navbar .brand {
   margin: 39px 0 0 0;
   padding: 0;
   background-color: #323232;
   text-align: center;
 }
-/* line 80, ../../app/assets/stylesheets/public.css.scss */
+/* line 102, ../../app/assets/stylesheets/public.css.scss */
 .navbar .brand a {
   padding: 0;
   margin: 0 auto;
@@ -7226,8 +7254,10 @@ img {
   display: block;
   width: 220px;
   height: 120px;
+  text-transform: uppercase;
+  font-family: "ambroise-std", Georgia, "Times New Roman", Times, serif;
 }
-/* line 93, ../../app/assets/stylesheets/public.css.scss */
+/* line 116, ../../app/assets/stylesheets/public.css.scss */
 .navbar .btn-navbar {
   text-shadow: none;
   color: white;
@@ -7256,7 +7286,7 @@ img {
 .navbar .btn-navbar:active, .navbar .btn-navbar.active {
   background-color: #676767 \9;
 }
-/* line 98, ../../app/assets/stylesheets/public.css.scss */
+/* line 121, ../../app/assets/stylesheets/public.css.scss */
 .navbar ul.nav {
   display: block;
   margin-left: auto;
@@ -7270,38 +7300,39 @@ img {
   border-top: 1px solid #4c4c4c;
   border-bottom: 1px solid #191919;
 }
-/* line 21, ../../app/assets/stylesheets/public.css.scss */
+/* line 22, ../../app/assets/stylesheets/public.css.scss */
 .navbar ul.nav li:first-child {
   border-top: none;
 }
-/* line 24, ../../app/assets/stylesheets/public.css.scss */
+/* line 25, ../../app/assets/stylesheets/public.css.scss */
 .navbar ul.nav li:last-child {
   border-bottom: none;
 }
-/* line 27, ../../app/assets/stylesheets/public.css.scss */
+/* line 28, ../../app/assets/stylesheets/public.css.scss */
 .navbar ul.nav li a {
   font-size: 12px;
   text-transform: uppercase;
   text-align: left;
   text-shadow: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "ambroise-std", Georgia, "Times New Roman", Times, serif;
   font-weight: 300;
   padding: 7px 10px 9px;
   line-height: 19px;
+  letter-spacing: 2px;
 }
 
 /*-----------------------------------------
  FOOTER
 ----------------------------------------- */
-/* line 111, ../../app/assets/stylesheets/public.css.scss */
+/* line 134, ../../app/assets/stylesheets/public.css.scss */
 footer {
   padding: 0 20px;
 }
-/* line 113, ../../app/assets/stylesheets/public.css.scss */
+/* line 136, ../../app/assets/stylesheets/public.css.scss */
 footer nav {
   text-align: center;
 }
-/* line 116, ../../app/assets/stylesheets/public.css.scss */
+/* line 139, ../../app/assets/stylesheets/public.css.scss */
 footer ul.nav {
   display: block;
   margin-left: auto;
@@ -7309,21 +7340,43 @@ footer ul.nav {
   left: auto;
   float: none;
 }
-/* line 121, ../../app/assets/stylesheets/public.css.scss */
+/* line 144, ../../app/assets/stylesheets/public.css.scss */
 footer ul.nav > li > a {
   text-shadow: none;
   font-size: 14px;
 }
 
-/* line 127, ../../app/assets/stylesheets/public.css.scss */
+/* line 150, ../../app/assets/stylesheets/public.css.scss */
 #copyright-container {
   padding: 0 30px;
 }
 
-/* line 130, ../../app/assets/stylesheets/public.css.scss */
+/* line 153, ../../app/assets/stylesheets/public.css.scss */
 #site-by {
   font-size: 10px;
   text-align: center;
+}
+
+/* line 158, ../../app/assets/stylesheets/public.css.scss */
+.tools-menu-container {
+  position: fixed;
+  bottom: 0;
+  right: 12px;
+}
+/* line 163, ../../app/assets/stylesheets/public.css.scss */
+.tools-menu-container .nav > li > a {
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+  background-color: #333333;
+  white-space: normal;
+  text-align: center;
+  color: #999999;
+}
+/* line 171, ../../app/assets/stylesheets/public.css.scss */
+.tools-menu-container .nav > li > a.active, .tools-menu-container .nav > li > a:active, .tools-menu-container .nav > li > a:hover {
+  background-color: #333333;
+  color: white;
 }
 
 /*-----------------------------------------
@@ -8734,13 +8787,13 @@ footer ul.nav > li > a {
   }
 }
 @media (max-width: 767px) {
-  /* line 144, ../../app/assets/stylesheets/public.css.scss */
+  /* line 187, ../../app/assets/stylesheets/public.css.scss */
   body {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  /* line 149, ../../app/assets/stylesheets/public.css.scss */
+  /* line 192, ../../app/assets/stylesheets/public.css.scss */
   .container-fluid {
     padding: 20px;
     -webkit-box-sizing: border-box;
@@ -8749,13 +8802,13 @@ footer ul.nav > li > a {
   }
 }
 @media (max-width: 979px) {
-  /* line 156, ../../app/assets/stylesheets/public.css.scss */
+  /* line 199, ../../app/assets/stylesheets/public.css.scss */
   .navbar .brand {
     float: none;
     margin: 39px 0 0 0;
   }
 
-  /* line 163, ../../app/assets/stylesheets/public.css.scss */
+  /* line 206, ../../app/assets/stylesheets/public.css.scss */
   #locales-menu {
     position: absolute;
     top: 48px;
@@ -8765,18 +8818,18 @@ footer ul.nav > li > a {
 @media (min-width: 980px) {
   /*-- LAYOUT
   ----------------------------------------- */
-  /* line 174, ../../app/assets/stylesheets/public.css.scss */
+  /* line 217, ../../app/assets/stylesheets/public.css.scss */
   body {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  /* line 179, ../../app/assets/stylesheets/public.css.scss */
+  /* line 222, ../../app/assets/stylesheets/public.css.scss */
   .container-fluid {
     padding: 0;
   }
 
-  /* line 183, ../../app/assets/stylesheets/public.css.scss */
+  /* line 226, ../../app/assets/stylesheets/public.css.scss */
   #main-container {
     position: absolute;
     left: 220px;
@@ -8784,7 +8837,7 @@ footer ul.nav > li > a {
     max-width: 836px;
   }
 
-  /* line 190, ../../app/assets/stylesheets/public.css.scss */
+  /* line 233, ../../app/assets/stylesheets/public.css.scss */
   #main {
     padding: 36px;
     -webkit-box-sizing: border-box;
@@ -8794,7 +8847,7 @@ footer ul.nav > li > a {
 
   /*-- HEADER
   ----------------------------------------- */
-  /* line 197, ../../app/assets/stylesheets/public.css.scss */
+  /* line 240, ../../app/assets/stylesheets/public.css.scss */
   .navbar {
     position: fixed;
     top: 0;
@@ -8805,26 +8858,30 @@ footer ul.nav > li > a {
     width: 220px;
     margin-bottom: 0;
   }
-  /* line 209, ../../app/assets/stylesheets/public.css.scss */
+  /* line 252, ../../app/assets/stylesheets/public.css.scss */
   .navbar ul.nav > li > a {
     text-align: center;
   }
-  /* line 212, ../../app/assets/stylesheets/public.css.scss */
+  /* line 255, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav-collapse {
     position: absolute;
     top: 200px;
     left: 0;
     right: 0;
   }
-  /* line 218, ../../app/assets/stylesheets/public.css.scss */
+  /* line 261, ../../app/assets/stylesheets/public.css.scss */
   .navbar .footer-nav {
     position: absolute;
     bottom: 30px;
     left: 0;
     right: 0;
   }
+  /* line 267, ../../app/assets/stylesheets/public.css.scss */
+  .navbar .nav li.dropdown > .dropdown-toggle .caret {
+    display: none;
+  }
 
-  /* line 226, ../../app/assets/stylesheets/public.css.scss */
+  /* line 272, ../../app/assets/stylesheets/public.css.scss */
   .dropdown-menu.subnav {
     position: fixed;
     left: 220px;
@@ -8832,8 +8889,9 @@ footer ul.nav > li > a {
     min-height: 100%;
     height: auto !important;
     height: 100%;
+    width: 220px;
     border: none;
-    border-right: 1px solid gray;
+    border-left: 1px solid gray;
     background-color: #333333;
     z-index: 2;
     margin: 0;
@@ -8854,31 +8912,38 @@ footer ul.nav > li > a {
     border-top: 1px solid #4d4d4d;
     border-bottom: 1px solid #1a1a1a;
   }
-  /* line 21, ../../app/assets/stylesheets/public.css.scss */
+  /* line 22, ../../app/assets/stylesheets/public.css.scss */
   .dropdown-menu.subnav li:first-child {
     border-top: none;
   }
-  /* line 24, ../../app/assets/stylesheets/public.css.scss */
+  /* line 25, ../../app/assets/stylesheets/public.css.scss */
   .dropdown-menu.subnav li:last-child {
     border-bottom: none;
   }
-  /* line 27, ../../app/assets/stylesheets/public.css.scss */
+  /* line 28, ../../app/assets/stylesheets/public.css.scss */
   .dropdown-menu.subnav li a {
     font-size: 12px;
     text-transform: uppercase;
     text-align: left;
     text-shadow: none;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "ambroise-std", Georgia, "Times New Roman", Times, serif;
     font-weight: 300;
     padding: 7px 10px 9px;
     line-height: 19px;
+    letter-spacing: 2px;
   }
-  /* line 244, ../../app/assets/stylesheets/public.css.scss */
+  /* line 291, ../../app/assets/stylesheets/public.css.scss */
   .dropdown-menu.subnav li a {
+    white-space: normal;
+    text-align: center;
     color: #999999;
   }
-  /* line 246, ../../app/assets/stylesheets/public.css.scss */
-  .dropdown-menu.subnav li a:hover {
+  /* line 297, ../../app/assets/stylesheets/public.css.scss */
+  .dropdown-menu.subnav li a.active, .dropdown-menu.subnav li a:active, .dropdown-menu.subnav li a:hover {
+    color: white;
+  }
+  /* line 301, ../../app/assets/stylesheets/public.css.scss */
+  .dropdown-menu.subnav li.active a {
     color: white;
   }
 }
