@@ -33,7 +33,7 @@ var Site = {
 	init: function() {
 		$body = $("body"),
 		$window = $(window);
-		$navbar = $('header.navbar');
+		$navbar = $('.navbar:first');
 		$container = $('#main-container');
 		$mainRow = $('#main');
 		navBarWidth = $navbar.width();
@@ -157,18 +157,20 @@ var Page = {
 	},
 	
 	show: function(full, noDelay) {
-		$container.stop().show().css({
-			left : rightPadding
-		});
+	//	$container.stop().show().css({
+	//		left : rightPadding
+	//	});
+	noDelay =false;
 		setTimeout(function() {
 			if(noDelay || ie8) {
 				$container.css({
 					left : rightPadding
 				})
 			} else {
-				$container.animate({
+				$container.stop().show().animate({
 					left : rightPadding
 				}, animationSpeed, animationEasing, function() {
+					console.log("ok")
 					$container.find("embed").each(function(){
 						var original = $(this);
 						var embed = original.clone();
@@ -181,7 +183,7 @@ var Page = {
 
 				})
 			}
-		}, 1)
+		}, 100)
 	}
 }
 
@@ -194,11 +196,13 @@ var Navigation = {
 			var link = $(this),
 				li = link.parent(),
 				subnav = $('ul.nav-menu-' + li.attr('id'));
+				
+			subnav.find('li').removeClass('active');
 			if(!li.hasClass('active')) {
 				$('ul.nav-menu li').removeClass('active');
 				li.addClass('active');
 				Page.close();
-				console.log('ul.nav-menu-' + li.attr('id'))
+				Navigation.close();
 				if(subnav.length > 0) {
 					Navigation.show(subnav);
 				} else {
@@ -307,7 +311,6 @@ var Navigation = {
 	},
 	
 	show: function(target) {
-		Navigation.close();
 		if(target.is(":hidden")) {
 			rightPadding = target.outerWidth(true) + $navbar.outerWidth(true);
 			target.show().delay(animationSpeed).animate({
