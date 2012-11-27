@@ -1,16 +1,26 @@
+
+<% @background_images = resource.images.empty? ? site.home.images : resource.images %>
 <!doctype html>
 <%= render 'html_tag' %>
 <%= render 'head' %>
-<body id='<%= @body_id %>' <%= "class='mobile-device'" if is_mobile_device? %>>
+<body id='<%= @body_id %>'>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 <div id="wrapper-wide-body">
   <%= render 'header' %>
+	<%- unless @background_images.empty? -%>
+	<div class="row-fluid"> 
+		<div class="span12">
+			<%= render "images/shared/carousel", :images => @background_images, :image_style => '1400x500#' %>
+		</div>
+	</div>
+	<% end %>
   <div id='main-container' class='container-fluid'>
     <% if content_for?(:page_container) %>
         <%= render "flash" %>
         <%= yield :page_container %>
     <% else %>
+
         <div id="main-row" class='row-fluid'>
           <% if content_for?(:page_content) %>
               <div id="main" class='span12 <%= @body_id %>'>
@@ -18,12 +28,17 @@
               </div>
           <% else %>
               <%
-                 has_sidebar = content_for?(:sidebar)
+                 has_left_sidebar = content_for?(:left_sidebar)
+                 has_sidebar = content_for?(:sidebar_header) || content_for?(:sidebar)
                  main_span = 12
                  main_span -= 3 if has_sidebar
+                 main_span -= 3 if has_left_sidebar
               %>
+              <% if has_left_sidebar %>
+                  <aside id='left_sidebar' class="span3"><%= yield :left_sidebar %></aside>
+              <% end %>
               <div id="main" class='span<%= main_span %> <%= @body_id %> '>
-				  <%= render "flash" %>
+				  
                   <%= yield %>
               </div>
               <% if has_sidebar %>
@@ -36,33 +51,10 @@
         </div>
         <% end %><%# end page_container %>
   </div>
-<%= render_menu('tools') %>
-  <div class="hidden-desktop">
-	
   <%= render 'footer' %>
   <%= render 'copyright' %>
-  </div>
 </div>
 
 <%= render 'javascripts' %>
-<% unless is_mobile_device? %>
-<%
-	@background_images ||= site.home.images.order(:position)
-%>
-<script type="text/javascript">
-	
-	jQuery(function($){
-		
-		$.supersized({
-			slide_interval :   3000,		// Length between transitions
-			transition :   3, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-			transition_speed :	800,		// Speed of transition
-			slides  :  [<%= raw @background_images.map{|c| "{image: '#{c.url}'}" }.join(",").to_s %>]
-		});
-    });
-    
-</script>
-<% end %>
-
 </body>
 </html>

@@ -1,347 +1,353 @@
-/*!
- * Theme Based on Bootstrap v2.0.4
- *
- * Copyright 2012 Regis Bruggheman
- */
-
-$navbarWidth: 180px; //! same as logo
-$themeColor: #323232;
-$themeBgColor: white;
-$mediumBrown: gray;
-$themeTextColor: #333;
-$bodyBackground :whiteSmoke;
-$linkColor: $themeColor;
-$navbarLinkBackgroundActive: $themeColor;
-$serifFontFamily:       Georgia, "Times New Roman", Times, serif;
-$altFontFamily: "ambroise-std", Georgia, "Times New Roman", Times, serif;
-$headingsFontFamily: $altFontFamily;
-$baseFontFamily: $serifFontFamily;
 
 
-@mixin nav-link($borderColor) {
-	li {
-		float: none;
-		border-top: 1px solid lighten($borderColor, 10%);
-		border-bottom: 1px solid darken($borderColor, 10%);
-		
-		&:first-child {
-			//border-top: none;
-		};
-		&:last-child {
-			//border-bottom: none;
-		};
-		a {
-			font-size: 11px;
-			text-transform: uppercase;
-			text-align: left;
-			text-shadow: none;
-			font-family: $altFontFamily;
-			font-weight: 300;
-			padding: 7px 10px 9px;
-			line-height: 19px;
-			letter-spacing: 2px;
-		}
-		// Hover state
-		// -----------
-		 > a:hover,
-		 > a:focus,
-		&:hover > a {
-		  @include gradient-vertical($dropdownLinkBackgroundHover, darken($dropdownLinkBackgroundHover, 5%));
-		}
-
-		// Active state
-		// ------------
-		&.active > a,
-		&.active > a:hover {
-		  @include gradient-vertical($dropdownLinkBackgroundActive, darken($dropdownLinkBackgroundActive, 5%));
-		}
-	}
-
-}
-
+$themeColor: #1560bd;
+$brandWidth: 120px;
 
 @import "variables";
+
+
+
 @import "twitter/bootstrap";
 @import "gko/public/base";
-@import "galleria";
-@import "supersized";
 
-h1,h2,h3,h4,h5,h6 {
-	text-transform: uppercase;
-}
-h2 {
-	font-size: 22px;
-	line-height: 26px;
-}
-h3 {
-	font-size: 18px;
-	line-height: 22px;
-	margin-top: 18px;
-}
-.html-text {
-	h2,h3,h4,h5,h6 {
-	   margin-bottom: 0;
-	}	
-}
-/*-----------------------------------------
- STRUCTURAL LAYOUT 
------------------------------------------ */
+
+h1 { font-size: $baseFontSize * 2; } // ~38px
+h2 { font-size: $baseFontSize * 1.5; letter-spacing: 2px;} // ~32px
+h3 { font-size: $baseFontSize * 1.25; letter-spacing: 1px;} // ~24px
+h4 { font-size: $baseFontSize * 0.75; } // ~18px
+h5 { font-size: $baseFontSize; text-transform: uppercase;}
+h6 { font-size: $baseFontSize * 1; } // ~12px
 * {
 	@include box-sizing(border-box);
 }
 a:focus {
   outline: 0;
 }
-.page-title {
-	font-weight: normal;
-	margin-bottom: $baseLineHeight;
-	text-transform: uppercase;
+
+
+/*-----------------------------------------
+ STRUCTURAL LAYOUT 
+----------------------------------------- */
+body {
+	border-top: 8px solid $themeColor;
+	background-image: asset-url("white_linen_v2.png", image);
 }
-#left-sidebar {
-	display: none;
-}
-.html-text {
-	font-weight: 300;
-}
+
+
+.navbar .row-fluid,
 #main-container {
-	background: $themeBgColor;
-	background-color: rgba(255,255,255,.9);
-	min-height: 100%;
+	max-width: 980px;
+	@include center-block();
+}
+
+
+#page-text {
+	padding: $baseLineHeight;
 }
 /*-----------------------------------------
  HEADER
 ----------------------------------------- */
 .navbar {
-	background-color: darken($themeColor, 1%);
 	margin-bottom: 0;
+	background-image: asset-url("black_linen_v2.png", image);
+	.navbar-inner {
+		background: none;
+	}
 	.brand {
+		letter-spacing: 4px;
+		text-align: left;
+		text-transform: uppercase;
+		line-height: 42px;
+		font-weight: 300;
+		font-size: 32px;
 		margin: 0;
-		padding: 0;
-		background-color: #59cdfe;
-		text-align: center;
-		
+		padding: $baseLineHeight;
+		//background-color: $themeColor;
 		a {
-			padding: 0;
-			margin: 0;
+			color: $navbarBrandColor;
 			cursor: pointer;
+			padding: 0;
+			margin: 0 auto;
+			background: transparent image-url("logo.png") center center no-repeat;
 			text-decoration: none;
 			display: block;
-			width: $navbarWidth;
-			height: $navbarWidth / 2;
-			line-height: $navbarWidth / 2;
-			text-transform: uppercase;
-			font-family: $altFontFamily;
-			font-size: 34px;
-			color: $white;
+			@include square($brandWidth);
+			@include hide-text;
+			&:hover {
+				color: $white;
+				text-decoration: none;
+			};
 		}
 	}
-	.btn-navbar {
+	.nav > li > a {
+		font-family: $altFontFamily;
+		text-transform: uppercase;
+		font-size: $baseFontSize - 2;
+		letter-spacing: 2px;
 		text-shadow: none;
-		@include button-background($themeTextColor, $mediumBrown);
-
-	}
-	ul.nav {
-		@include center-block();
-		left: auto;
-		float: none;
-		@include nav-link($themeColor);
-	}
-	ul.nav.pipe > li > a {
-		font-size: 13px;
-		text-transform: lowercase;
-		padding: 4px 10px 5px;
-		line-height: 15px;
-		letter-spacing: 1px;
+		padding: 4px 15px 4px;
+		border-top: 1px solid #424242;
 	}
 }
 
-
+.header-nav {
+	@include clearfix;
+	margin-top: 24px;
+}
+.header-top {
+	position: absolute;
+	right: 0;
+	top: 0;
+	nav {
+		float: left;
+	}
+	.nav > li > a {
+		color: #A1A1A1;
+		font-size: 11px;
+		
+	}
+}
+/*-----------------------------------------
+ ASIDE
+----------------------------------------- */
+aside {
+	margin-top: $baseLineHeight * 2;
+	.nav > li > a {
+		font-family: $altFontFamily;
+		text-transform: uppercase;
+		font-size: $baseFontSize - 2;
+		letter-spacing: 1px;
+		text-shadow: none;
+		padding: 4px 15px 4px;
+		border-top: 1px solid $navbarInverseLinkColor;
+		&:hover {
+			background: transparent;
+			color: $themeColor;
+		};
+		&.active {
+			color: $themeColor;
+		}
+	}
+}
 /*-----------------------------------------
  FOOTER
 ----------------------------------------- */
-
-footer {
-	padding: 0 20px;
-	nav {
-		text-align: center;
-	}
-	ul.nav {
-		@include center-block();
-		left: auto;
-		float: none;
-	}
-	ul.nav > li > a {
-		text-shadow: none;
-		font-size: 14px;
-	}
-}
-
-#copyright-container {
-	padding: 0 30px;
-}
-#site-by {
-	font-size: 10px;
-	text-align: center;;
-}
-
-.tools-menu-container {
-	position: fixed;
-	top: 0;
-	right: 12px;
-	.nav > li {
-		float: left;
-		margin-left: 4px;
-	}
-	
+.footer {
 	.nav > li > a {
-		@include border-radius(0 0 6px 6px);
-		background-color: $themeTextColor;
-		white-space: normal;
-		text-align: center;
-		color: $navbarLinkColor;
-		font-size: 11px;
-		text-transform: uppercase;
-		text-shadow: none;
 		font-family: $altFontFamily;
-		font-weight: 300;
-		padding: 7px 10px 9px;
-		line-height: 19px;
+		text-transform: uppercase;
+		font-size: $baseFontSize - 3;
 		letter-spacing: 2px;
-		&.active,
-		&:active,
-		&:hover {
-			background-color: $themeTextColor;
-			color: $navbarLinkColorHover;
-		}
+		text-shadow: none;
 	}
 }
+
 /*-----------------------------------------
  CONTENT
 ----------------------------------------- */
+.html-text {
+	h2 {
+		text-transform: uppercase;
+	}
+	h3 {
+		text-transform: uppercase;
+	}
+}
+.page-title {
+	font-weight: normal;
+	margin-bottom: $baseLineHeight;
+	letter-spacing: 4px;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 300;
+}
 
-/*-----------------------------------------
- RESPONSIVE
------------------------------------------ */
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+  /* Carousel base class */
+  .carousel {
+	margin-top: $navbarHeight;
+    margin-bottom: $baseLineHeight;
+  }
+
+  .carousel .container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .carousel-control {
+    background-color: transparent;
+    border: 0;
+    font-size: 120px;
+    margin-top: 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  }
+
+  .carousel .item {
+    //height: 500px;
+  }
+  .carousel img {
+    min-width: 100%;
+    //height: 500px;
+  }
+
+  .carousel-caption {
+    background-color: transparent;
+    position: static;
+    max-width: 550px;
+    padding: 0 20px;
+    margin-bottom: 100px;
+  }
+  .carousel-caption h1,
+  .carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  }
+  .carousel-caption .btn {
+    margin-top: 10px;
+  }
+
+/* CUSTOMIZE THE COPYRIGHT
+  -------------------------------------------------- */
+#copyright-container {
+	a {
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+}
+ /* RESPONSIVE CSS
+    -------------------------------------------------- */
 @import "twitter/bootstrap/responsive";
+
 
 @media (max-width: 767px) {
 	body {
-		padding-left: 0px;
-		padding-right: 0px;
+		padding-left: 0;
+		padding-right: 0;
 	}
-
-	.container-fluid {
-		padding: 20px;
-		@include box-sizing(border-box);
+	#page-text {
+		height: auto;
 	}
-}	
-@media (max-width: 979px) {
-	.navbar {
-		.brand {
-			float: none;
-			
-			margin: 39px 0 0 0;
-		}	
-	}
-	
-	#locales-menu {
-		position: absolute;
-		top: 39 + ($baseLineHeight / 2);
-		right: $baseLineHeight / 2;
-	}
-}
-@media (min-width: 980px) {
-
-	/*-- LAYOUT
-	----------------------------------------- */
-	
-	body {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-	
-	.container-fluid {
-		padding: 0;
-	}
-
 	#main-container {
-		position: absolute;
-		left: $navbarWidth;
-		min-height: 100%;
-		max-width: 800px + ($baseLineHeight * 2);
+		padding-left: 20px;
+		padding-right: 20px;
 	}
-	
-	#main {
-		padding: $baseLineHeight * 2;
-		@include box-sizing(border-box);
+	.carousel {
+		margin-top: 0;
+ 		margin-left: -20px;
+		margin-right: -20px;
 	}
+
+	      .carousel .item {
+	       // height: 300px;
+	      }
+	      .carousel img {
+	       // height: 300px;
+	      }
+	      .carousel-caption {
+	        width: 65%;
+	        padding: 0 70px;
+	        margin-bottom: 40px;
+	      }
+	      .carousel-caption h1 {
+	        font-size: 30px;
+	      }
+	      .carousel-caption .lead,
+	      .carousel-caption .btn {
+	        font-size: 18px;
+	      }
 	
-	/*-- HEADER
-	----------------------------------------- */
-	.navbar {
-		position: fixed;
-		top: 0;
-		left: 0;
-		min-height: 100%;
-		z-index: 10;
-		min-width: $navbarWidth;
-		width: $navbarWidth;
+}
+@media (max-width: 979px) {
+
+
+	.navbar-inner {
+		background-color: $themeColor;
+		//@include gradient-vertical($themeColor, $themeColor);
+	  	@include border-radius(0);
+	  	@include box-shadow(none);
+		padding: 0
+	}
+
+	.navbar, .navbar-fixed-top {
 		margin-bottom: 0;
 		.brand {
-			//margin: 0;
-		}
-		ul.nav > li > a {
+			float: none;
 			text-align: center;
-		}
+			margin: $baseLineHeight 0;
+		}	
 		.nav-collapse {
-			position: absolute;
-			top: 200px;
-			left: 0;
-			right: 0;
+			border-top: 1px solid lightGrey;
 		}
-		.footer-nav {
-			position: absolute;
-			bottom: 30px;
-			left: 0;
-			right: 0;
-		}
-		.nav li.dropdown > .dropdown-toggle .caret {
-			display: none;
-		}
-	}
 
-	.dropdown-menu.subnav {
-		position: fixed;
-		left: $navbarWidth;
-		top: 0;
-		min-height: 100%;
-		height: auto !important;
-		height: 100%;
-		width: $navbarWidth;
-		border: none;
-		border-left: 1px solid $black;
-		background-color: $themeColor;
-		z-index: 2;
-		margin: 0;
-		padding: 200px 0;
-		@include box-sizing(border-box);
-		@include nav-link($themeTextColor);
-		@include box-shadow(none);
-		@include border-radius(0);
-		li {
-			a {
-				white-space: normal;
-				text-align: center;
-				color: $navbarLinkColor;
-				&.active,
-				&:active,
-				&:hover {
-					color: $navbarLinkColorHover;
-				}
-			}
-			&.active a {
+		.nav-collapse nav,
+		.nav-collapse .nav {
+			@include clearfix();
+			margin: 0;
+		}
+		.nav-collapse .dropdown-menu {
+			margin: 0;
+		}
+		.nav-collapse .nav > li,
+		.nav-collapse .dropdown-menu li {
+		  	//margin-left: 24px;
+			border-bottom: 1px solid $navbarLinkColor;
+		}
+		.nav-collapse .dropdown-menu li:last-child {
+			border-bottom: none;
+		}
+
+		.nav-collapse .nav > li > a,
+		.nav-collapse .dropdown-menu a {
+		  font-weight: normal;
+		  @include border-radius(0);
+		  &:hover {
+				background-color: $themeColor;
 				color: $navbarLinkColorHover;
 			}
+		}
+		
+	}
+	.header-nav {
+		margin-top: 0;;
+	}
+	.carousel .item {
+	        //height: 500px;
+	      }
+	      .carousel img {
+	        width: auto;
+	        //height: 500px;
+	      }	
+
+}
+@media (min-width: 980px) {
+	.navbar {
+		@extend .navbar-fixed-top;
+		.nav-collapse .nav {
+			float: left;
+			
+			margin-top: $baseLineHeight;
+			margin-left: $baseLineHeight * 2;
+			> li {
+				float: none;
+				> a {
+					
+				}
+			}
+			li.dropdown > .dropdown-toggle .caret {
+				display:none;
+			}
+		}
+	}
+	.header-top {
+		nav {
+			border-top: 4px solid $themeColor;
 		}
 	}
 }
