@@ -11,20 +11,35 @@
 //= require jquery.throttledresize.js
 
 
-var $window,$body,contentApi, isOverBreakPoint;
+var $window,$body,contentApi, breakPoint, isTouch;
 
 var Site = {
 	
 	init: function() {
-		$("a#member-access").data('remote', true)
-		.on('ajax:beforeSend', function(event, xhr, settings) {
-			
-		}).on('ajax:complete', function(evt, xhr, status) {
+		$window.on("throttledresize", Site.resize);
+		$('.nav li.dropdown').on('click.dropdown.data-api', function (e) {
+			if ($window.width() > breakPoint) {
+				e.preventDefault();
+				e.stopPropagation();
+				var url = $(this).find('a:first').attr("href");
+				window.location = "http://" + window.location.hostname + url;
+				return false;
+			}
+		})
+		Site.resize;
+	},
+	
+	resize: function() {
+		
 
-        });
 	}
 }
 
 $(document).ready(function() {
+	$window = $(window);
+	$body = $("body");
+	isTouch = ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch;
+	breakPoint = 979;
+	
 	Site.init();
 });

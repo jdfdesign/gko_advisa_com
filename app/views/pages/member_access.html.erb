@@ -1,0 +1,22 @@
+<article class="row-fluid"> 
+	<div class="span12">
+		<%= render_page_title(resource.title) %>
+		
+		<div class="row-fluid"> 
+			<div class="span7">
+			<%= render_html_text(resource.body) %>
+			</div>
+			<div class="span5">
+				<%= simple_form_for :user, 
+									:url => user_session_path, 
+									:html => { :data => { :remote => true, :type => :json }, :id => "signin-form", :class => "well" } do |f| %>
+					<%= f.input :email, :placeholder => "Your Email Address", :label => false, :hint => false %>
+					<%= f.input :password, :placeholder => "Your Password", :label => false, :hint => false %>
+					<%= f.button :submit, "Se connecter", :class => 'btn btn-block btn-primary', :disable_with => "Submitting..." do %>
+							<i class="icon-arrow-right"></i>
+					<% end %>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</article>
