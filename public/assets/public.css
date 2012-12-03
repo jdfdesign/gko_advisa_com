@@ -4540,7 +4540,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 22, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-e929bc9dbb6c/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navbar.scss */
 .navbar-inner {
-  min-height: 160px;
+  min-height: 120px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #252525;
@@ -4586,7 +4586,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 70px 20px 70px;
+  padding: 50px 20px 50px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -4601,7 +4601,7 @@ input[type="submit"].btn.btn-mini {
 /* line 67, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-e929bc9dbb6c/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navbar.scss */
 .navbar-text {
   margin-bottom: 0;
-  line-height: 160px;
+  line-height: 120px;
 }
 
 /* line 74, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-e929bc9dbb6c/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navbar.scss */
@@ -4615,7 +4615,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 83, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-e929bc9dbb6c/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navbar.scss */
 .navbar .divider-vertical {
-  height: 160px;
+  height: 120px;
   margin: 0 9px;
   border-left: 1px solid #252525;
   border-right: 1px solid #252525;
@@ -4624,7 +4624,7 @@ input[type="submit"].btn.btn-mini {
 /* line 93, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-e929bc9dbb6c/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navbar.scss */
 .navbar .btn,
 .navbar .btn-group {
-  margin-top: 65px;
+  margin-top: 45px;
 }
 
 /* line 98, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-e929bc9dbb6c/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navbar.scss */
@@ -4654,7 +4654,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-form select,
 .navbar-form .radio,
 .navbar-form .checkbox {
-  margin-top: 65px;
+  margin-top: 45px;
 }
 /* line 115, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-e929bc9dbb6c/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navbar.scss */
 .navbar-form input,
@@ -4685,7 +4685,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search {
   position: relative;
   float: left;
-  margin-top: 65px;
+  margin-top: 45px;
   margin-bottom: 0;
 }
 /* line 141, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-e929bc9dbb6c/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navbar.scss */
@@ -4799,7 +4799,7 @@ input[type="submit"].btn.btn-mini {
 /* line 238, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-e929bc9dbb6c/gko_core/vendor/assets/stylesheets/twitter/bootstrap/navbar.scss */
 .navbar .nav > li > a {
   float: none;
-  padding: 70px 15px 70px;
+  padding: 50px 15px 50px;
   color: #777777;
   text-decoration: none;
   text-shadow: 0 1px 0 #252525;
@@ -6804,7 +6804,6 @@ body {
 }
 
 /* line 33, ../../app/assets/stylesheets/public.css.scss */
-.navbar .row-fluid,
 #main-container {
   max-width: 980px;
   display: block;
@@ -6850,7 +6849,7 @@ form input, form textarea {
 /* line 73, ../../app/assets/stylesheets/public.css.scss */
 .navbar {
   margin-bottom: 0;
-  background-image: url(/assets/black_linen_v2.png);
+  background-image: url(/assets/blue_linen_v2.jpg);
 }
 /* line 76, ../../app/assets/stylesheets/public.css.scss */
 .navbar .navbar-inner {
@@ -6865,7 +6864,7 @@ form input, form textarea {
   font-weight: 300;
   font-size: 32px;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
 /* line 89, ../../app/assets/stylesheets/public.css.scss */
 .navbar .brand a {
@@ -6889,21 +6888,45 @@ form input, form textarea {
   color: white;
   text-decoration: none;
 }
-/* line 105, ../../app/assets/stylesheets/public.css.scss */
+/* line 106, ../../app/assets/stylesheets/public.css.scss */
+.navbar .dropdown-menu li > a,
 .navbar .nav > li > a {
   font-family: "ambroise-std", Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   font-size: 12px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-shadow: none;
-  padding: 4px 15px 4px;
-  border-top: 1px solid #424242;
+  padding: 4px 12px 4px;
+}
+/* line 118, ../../app/assets/stylesheets/public.css.scss */
+.navbar .nav-collapse .dropdown-menu {
+  background: #202331;
+}
+/* line 121, ../../app/assets/stylesheets/public.css.scss */
+.navbar .nav-collapse .dropdown-menu > li > a {
+  color: #777777;
+}
+/* line 128, ../../app/assets/stylesheets/public.css.scss */
+.navbar .nav-collapse .nav > li > a:hover,
+.navbar .nav-collapse .nav > li > a:focus,
+.navbar .nav-collapse .dropdown-menu li > a:hover,
+.navbar .nav-collapse .dropdown-menu li > a:focus,
+.navbar .nav-collapse .dropdown-submenu:hover > a {
+  color: white;
+  background-color: #1560bd;
+  background-color: #1560bd;
+  background-image: -moz-linear-gradient(top, #1560bd, #1560bd);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1560bd), to(#1560bd));
+  background-image: -webkit-linear-gradient(top, #1560bd, #1560bd);
+  background-image: -o-linear-gradient(top, #1560bd, #1560bd);
+  background-image: linear-gradient(top, #1560bd, #1560bd);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie_hex_str(#1560bd)', endColorstr='ie_hex_str(#1560bd)', GradientType=0);
 }
 
-/* line 116, ../../app/assets/stylesheets/public.css.scss */
+/* line 136, ../../app/assets/stylesheets/public.css.scss */
 .header-nav {
   *zoom: 1;
-  margin-top: 24px;
 }
 /* line 16, ../../../../.rvm/gems/ruby-1.8.7-p358@global/bundler/gems/gko_cms3-e929bc9dbb6c/gko_core/vendor/assets/stylesheets/twitter/bootstrap/mixins.scss */
 .header-nav:before, .header-nav:after {
@@ -6916,30 +6939,38 @@ form input, form textarea {
   clear: both;
 }
 
-/* line 120, ../../app/assets/stylesheets/public.css.scss */
+/* line 140, ../../app/assets/stylesheets/public.css.scss */
 .header-top {
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 124, ../../app/assets/stylesheets/public.css.scss */
+/* line 144, ../../app/assets/stylesheets/public.css.scss */
 .header-top nav {
   float: left;
 }
-/* line 127, ../../app/assets/stylesheets/public.css.scss */
+/* line 147, ../../app/assets/stylesheets/public.css.scss */
 .header-top .nav > li > a {
   color: #A1A1A1;
   font-size: 11px;
 }
 
+/* line 154, ../../app/assets/stylesheets/public.css.scss */
+a#member-access {
+  -webkit-border-radius: 0 0 8px 8px;
+  -moz-border-radius: 0 0 8px 8px;
+  border-radius: 0 0 8px 8px;
+  background-color: #1560bd;
+}
+
 /*-----------------------------------------
  ASIDE
 ----------------------------------------- */
-/* line 136, ../../app/assets/stylesheets/public.css.scss */
+/* line 161, ../../app/assets/stylesheets/public.css.scss */
 aside {
   margin-top: 40px;
 }
-/* line 138, ../../app/assets/stylesheets/public.css.scss */
+/* line 163, ../../app/assets/stylesheets/public.css.scss */
 aside .nav > li > a {
   font-family: "ambroise-std", Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
@@ -6949,12 +6980,12 @@ aside .nav > li > a {
   padding: 4px 15px 4px;
   border-top: 1px solid #999999;
 }
-/* line 146, ../../app/assets/stylesheets/public.css.scss */
+/* line 171, ../../app/assets/stylesheets/public.css.scss */
 aside .nav > li > a:hover {
   background: transparent;
   color: #1560bd;
 }
-/* line 150, ../../app/assets/stylesheets/public.css.scss */
+/* line 175, ../../app/assets/stylesheets/public.css.scss */
 aside .nav > li > a.active {
   color: #1560bd;
 }
@@ -6962,7 +6993,7 @@ aside .nav > li > a.active {
 /*-----------------------------------------
  FOOTER
 ----------------------------------------- */
-/* line 159, ../../app/assets/stylesheets/public.css.scss */
+/* line 184, ../../app/assets/stylesheets/public.css.scss */
 .footer .nav > li > a {
   font-family: "ambroise-std", Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
@@ -6974,22 +7005,22 @@ aside .nav > li > a.active {
 /*-----------------------------------------
  CONTENT
 ----------------------------------------- */
-/* line 174, ../../app/assets/stylesheets/public.css.scss */
+/* line 199, ../../app/assets/stylesheets/public.css.scss */
 .html-text h1,
 .html-text h2,
 .html-text h3 {
   line-height: 30px;
 }
-/* line 175, ../../app/assets/stylesheets/public.css.scss */
+/* line 200, ../../app/assets/stylesheets/public.css.scss */
 .html-text h2 {
   text-transform: uppercase;
 }
-/* line 178, ../../app/assets/stylesheets/public.css.scss */
+/* line 203, ../../app/assets/stylesheets/public.css.scss */
 .html-text h3 {
   text-transform: uppercase;
 }
 
-/* line 182, ../../app/assets/stylesheets/public.css.scss */
+/* line 207, ../../app/assets/stylesheets/public.css.scss */
 .page-title {
   font-weight: normal;
   margin-bottom: 20px;
@@ -7002,12 +7033,12 @@ aside .nav > li > a.active {
 /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
 /* Carousel base class */
-/* line 196, ../../app/assets/stylesheets/public.css.scss */
+/* line 221, ../../app/assets/stylesheets/public.css.scss */
 .carousel {
   margin-bottom: 20px;
 }
 
-/* line 200, ../../app/assets/stylesheets/public.css.scss */
+/* line 225, ../../app/assets/stylesheets/public.css.scss */
 .carousel .container {
   position: absolute;
   right: 0;
@@ -7015,7 +7046,7 @@ aside .nav > li > a.active {
   left: 0;
 }
 
-/* line 207, ../../app/assets/stylesheets/public.css.scss */
+/* line 232, ../../app/assets/stylesheets/public.css.scss */
 .carousel-control {
   background-color: transparent;
   border: 0;
@@ -7024,12 +7055,12 @@ aside .nav > li > a.active {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-/* line 215, ../../app/assets/stylesheets/public.css.scss */
+/* line 240, ../../app/assets/stylesheets/public.css.scss */
 .carousel img {
   min-width: 100%;
 }
 
-/* line 219, ../../app/assets/stylesheets/public.css.scss */
+/* line 244, ../../app/assets/stylesheets/public.css.scss */
 .carousel-caption {
   background-color: transparent;
   position: static;
@@ -7038,7 +7069,7 @@ aside .nav > li > a.active {
   margin-bottom: 100px;
 }
 
-/* line 227, ../../app/assets/stylesheets/public.css.scss */
+/* line 252, ../../app/assets/stylesheets/public.css.scss */
 .carousel-caption h1,
 .carousel-caption .lead {
   margin: 0;
@@ -7047,14 +7078,14 @@ aside .nav > li > a.active {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-/* line 233, ../../app/assets/stylesheets/public.css.scss */
+/* line 258, ../../app/assets/stylesheets/public.css.scss */
 .carousel-caption .btn {
   margin-top: 10px;
 }
 
 /* CUSTOMIZE THE COPYRIGHT
   -------------------------------------------------- */
-/* line 240, ../../app/assets/stylesheets/public.css.scss */
+/* line 265, ../../app/assets/stylesheets/public.css.scss */
 #copyright-container a {
   text-transform: uppercase;
   font-weight: normal;
@@ -8466,19 +8497,19 @@ aside .nav > li > a.active {
   }
 }
 @media (max-width: 767px) {
-  /* line 251, ../../app/assets/stylesheets/public.css.scss */
+  /* line 276, ../../app/assets/stylesheets/public.css.scss */
   body {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 255, ../../app/assets/stylesheets/public.css.scss */
+  /* line 280, ../../app/assets/stylesheets/public.css.scss */
   #main-container {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  /* line 259, ../../app/assets/stylesheets/public.css.scss */
+  /* line 284, ../../app/assets/stylesheets/public.css.scss */
   .carousel {
     margin-top: 0;
     margin-left: -20px;
@@ -8486,46 +8517,46 @@ aside .nav > li > a.active {
     margin-bottom: 0;
   }
 
-  /* line 265, ../../app/assets/stylesheets/public.css.scss */
+  /* line 290, ../../app/assets/stylesheets/public.css.scss */
   .carousel-caption {
     width: 65%;
     padding: 0 70px;
     margin-bottom: 40px;
   }
 
-  /* line 270, ../../app/assets/stylesheets/public.css.scss */
+  /* line 295, ../../app/assets/stylesheets/public.css.scss */
   .carousel-caption h1 {
     font-size: 30px;
   }
 
-  /* line 274, ../../app/assets/stylesheets/public.css.scss */
+  /* line 299, ../../app/assets/stylesheets/public.css.scss */
   .carousel-caption .lead,
   .carousel-caption .btn {
     font-size: 18px;
   }
 
-  /* line 277, ../../app/assets/stylesheets/public.css.scss */
+  /* line 302, ../../app/assets/stylesheets/public.css.scss */
   aside {
     margin-top: 0;
   }
-  /* line 279, ../../app/assets/stylesheets/public.css.scss */
+  /* line 304, ../../app/assets/stylesheets/public.css.scss */
   aside .nav > li > a {
     border-top: none;
     border-bottom: 1px solid #999999;
   }
-  /* line 283, ../../app/assets/stylesheets/public.css.scss */
+  /* line 308, ../../app/assets/stylesheets/public.css.scss */
   aside .nav > li > a:hover, aside .nav > li > a:focus {
     background-color: #1560bd;
     color: white;
   }
-  /* line 287, ../../app/assets/stylesheets/public.css.scss */
+  /* line 312, ../../app/assets/stylesheets/public.css.scss */
   aside .nav > li > a.active {
     background-color: #1560bd;
     color: white;
   }
 }
 @media (max-width: 979px) {
-  /* line 297, ../../app/assets/stylesheets/public.css.scss */
+  /* line 322, ../../app/assets/stylesheets/public.css.scss */
   .navbar-inner {
     background-color: #1560bd;
     -webkit-border-radius: 0;
@@ -8538,17 +8569,17 @@ aside .nav > li > a.active {
     border: none;
   }
 
-  /* line 306, ../../app/assets/stylesheets/public.css.scss */
+  /* line 331, ../../app/assets/stylesheets/public.css.scss */
   .navbar, .navbar-fixed-top, .navbar {
     margin-bottom: 0;
   }
-  /* line 308, ../../app/assets/stylesheets/public.css.scss */
+  /* line 333, ../../app/assets/stylesheets/public.css.scss */
   .navbar .brand, .navbar-fixed-top .brand, .navbar .brand {
     float: none;
     text-align: center;
     margin: 20px 0;
   }
-  /* line 318, ../../app/assets/stylesheets/public.css.scss */
+  /* line 343, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav-collapse nav,
   .navbar .nav-collapse .nav, .navbar-fixed-top .nav-collapse nav, .navbar .nav-collapse nav, .navbar-fixed-top .nav-collapse .nav, .navbar .nav-collapse .nav {
     *zoom: 1;
@@ -8567,20 +8598,16 @@ aside .nav > li > a.active {
   .navbar .nav-collapse .nav:after, .navbar-fixed-top .nav-collapse nav:after, .navbar .nav-collapse nav:after, .navbar-fixed-top .nav-collapse .nav:after, .navbar .nav-collapse .nav:after {
     clear: both;
   }
-  /* line 322, ../../app/assets/stylesheets/public.css.scss */
-  .navbar .nav-collapse .dropdown-menu, .navbar-fixed-top .nav-collapse .dropdown-menu, .navbar .nav-collapse .dropdown-menu {
-    margin: 0;
-  }
-  /* line 326, ../../app/assets/stylesheets/public.css.scss */
+  /* line 349, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav-collapse .nav > li,
   .navbar .nav-collapse .dropdown-menu li, .navbar-fixed-top .nav-collapse .nav > li, .navbar .nav-collapse .nav > li, .navbar-fixed-top .nav-collapse .dropdown-menu li, .navbar .nav-collapse .dropdown-menu li {
     border-bottom: 1px solid #777777;
   }
-  /* line 330, ../../app/assets/stylesheets/public.css.scss */
+  /* line 353, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav-collapse .dropdown-menu li:last-child, .navbar-fixed-top .nav-collapse .dropdown-menu li:last-child, .navbar .nav-collapse .dropdown-menu li:last-child {
     border-bottom: none;
   }
-  /* line 338, ../../app/assets/stylesheets/public.css.scss */
+  /* line 361, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav-collapse .nav > li > a,
   .navbar .nav-collapse .dropdown-menu li > a,
   .navbar .nav-collapse .dropdown-submenu > a, .navbar-fixed-top .nav-collapse .nav > li > a, .navbar .nav-collapse .nav > li > a, .navbar-fixed-top .nav-collapse .dropdown-menu li > a, .navbar .nav-collapse .dropdown-menu li > a, .navbar-fixed-top .nav-collapse .dropdown-submenu > a, .navbar .nav-collapse .dropdown-submenu > a {
@@ -8591,7 +8618,7 @@ aside .nav > li > a.active {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 348, ../../app/assets/stylesheets/public.css.scss */
+  /* line 371, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav-collapse .nav > li > a:hover,
   .navbar .nav-collapse .nav > li > a:focus,
   .navbar .nav-collapse .dropdown-menu li > a:hover,
@@ -8609,39 +8636,68 @@ aside .nav > li > a.active {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie_hex_str(#1560bd)', endColorstr='ie_hex_str(#1560bd)', GradientType=0);
   }
 
-  /* line 357, ../../app/assets/stylesheets/public.css.scss */
+  /* line 380, ../../app/assets/stylesheets/public.css.scss */
   .header-nav {
     margin-top: 0;
   }
 
-  /* line 361, ../../app/assets/stylesheets/public.css.scss */
+  /* line 384, ../../app/assets/stylesheets/public.css.scss */
   .carousel .item .carousel img {
     width: auto;
   }
 }
 @media (min-width: 980px) {
-  /* line 370, ../../app/assets/stylesheets/public.css.scss */
+  /* line 397, ../../app/assets/stylesheets/public.css.scss */
+  .navbar .nav-collapse {
+    margin-top: 92px;
+  }
+  /* line 399, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav-collapse .nav {
     float: left;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 0;
   }
-  /* line 375, ../../app/assets/stylesheets/public.css.scss */
-  .navbar .nav-collapse .nav > li {
-    float: none;
-  }
-  /* line 381, ../../app/assets/stylesheets/public.css.scss */
-  .navbar .nav-collapse .nav li.dropdown > .dropdown-toggle .caret {
-    display: none;
+  /* line 402, ../../app/assets/stylesheets/public.css.scss */
+  .navbar .nav-collapse .nav > li > .dropdown-menu {
+    -webkit-border-radius: 0 0 8px 8px;
+    -moz-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
   }
 
-  /* line 387, ../../app/assets/stylesheets/public.css.scss */
-  .header-top nav {
-    border-top: 4px solid #1560bd;
+  	/*li.dropdown > .dropdown-toggle .caret,
+  	li.dropdown.open > .dropdown-toggle .caret, 
+  	li.dropdown.active > .dropdown-toggle .caret, 
+  	li.dropdown.open.active > .dropdown-toggle .caret {
+  		display:none;
+  	}
   }
-
-  /* line 391, ../../app/assets/stylesheets/public.css.scss */
+  .nav > li > .dropdown-menu:before,
+  .nav > li > .dropdown-menu:after{
+  	display:none;
+  }
+  .dropdown-menu {
+  	margin: 0;
+  	background: none;
+  	position: relative;
+  	top: auto;
+  	left: auto;
+  	@include border-radius(none);
+  	@include box-shadow(none);
+  	border: none;
+  	> li > a {
+  		color: $navbarLinkColor;
+  		&:hover {
+  			color: $navbarLinkColorHover;
+  			background: none;
+  		}
+  		&:focus {
+  			color: $navbarLinkColorActive;
+  			background: none;
+  		}
+  		
+  	}
+  }*/
+  /* line 448, ../../app/assets/stylesheets/public.css.scss */
   .carousel {
-    margin-top: 150px;
+    margin-top: 110px;
   }
 }

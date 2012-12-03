@@ -29,7 +29,7 @@ body {
 }
 
 
-.navbar .row-fluid,
+
 #main-container {
 	max-width: 980px;
 	@include center-block();
@@ -72,7 +72,7 @@ form {
 ----------------------------------------- */
 .navbar {
 	margin-bottom: 0;
-	background-image: asset-url("black_linen_v2.png", image);
+	background-image: asset-url("blue_linen_v2.jpg", image);
 	.navbar-inner {
 		background: none;
 	}
@@ -84,7 +84,7 @@ form {
 		font-weight: 300;
 		font-size: 32px;
 		margin: 0;
-		padding: $baseLineHeight;
+		padding: 0;
 		//background-color: $themeColor;
 		a {
 			color: $navbarBrandColor;
@@ -102,20 +102,40 @@ form {
 			};
 		}
 	}
+	.dropdown-menu li > a,
 	.nav > li > a {
 		font-family: $altFontFamily;
 		text-transform: uppercase;
 		font-size: $baseFontSize - 2;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		text-shadow: none;
-		padding: 4px 15px 4px;
-		border-top: 1px solid #424242;
+		padding: 4px 12px 4px;
+		//border-top: 1px solid #424242;
+	}
+
+	.nav-collapse {
+		
+		.dropdown-menu {
+			background: #202331;
+		}
+		.dropdown-menu > li > a {
+			color: $navbarLinkColor;
+		}
+		.nav > li > a:hover,
+		.nav > li > a:focus,
+		.dropdown-menu li > a:hover, 
+		.dropdown-menu li > a:focus, 
+		.dropdown-submenu:hover > a {
+			color: $navbarLinkColorHover;
+			background-color: $themeColor;
+			@include gradient-vertical($themeColor, $themeColor);
+		}
 	}
 }
 
 .header-nav {
 	@include clearfix;
-	margin-top: 24px;
+	//margin-top: 24px;
 }
 .header-top {
 	position: absolute;
@@ -129,6 +149,11 @@ form {
 		font-size: 11px;
 		
 	}
+}
+
+a#member-access {
+	@include border-radius(0 0 8px 8px);
+	background-color: $themeColor;
 }
 /*-----------------------------------------
  ASIDE
@@ -319,9 +344,7 @@ aside {
 			@include clearfix();
 			margin: 0;
 		}
-		.nav-collapse .dropdown-menu {
-			margin: 0;
-		}
+
 		.nav-collapse .nav > li,
 		.nav-collapse .dropdown-menu li {
 		  	//margin-left: 24px;
@@ -364,28 +387,62 @@ aside {
 	}
 	
 }
+
+
+
 @media (min-width: 980px) {
+
 	.navbar {
 		@extend .navbar-fixed-top;
-		.nav-collapse .nav {
-			float: left;
-			
-			margin-top: $baseLineHeight;
-			margin-left: $baseLineHeight * 2;
-			> li {
-				float: none;
-				> a {
-					
+		.nav-collapse {
+			margin-top: 92px;
+			.nav {
+				float: left;
+				margin-left: 0;
+				> li > .dropdown-menu {
+					@include border-radius(0 0 8px 8px);
 				}
-			}
-			li.dropdown > .dropdown-toggle .caret {
-				display:none;
 			}
 		}
 	}
+				/*li.dropdown > .dropdown-toggle .caret,
+				li.dropdown.open > .dropdown-toggle .caret, 
+				li.dropdown.active > .dropdown-toggle .caret, 
+				li.dropdown.open.active > .dropdown-toggle .caret {
+					display:none;
+				}
+			}
+			.nav > li > .dropdown-menu:before,
+			.nav > li > .dropdown-menu:after{
+				display:none;
+			}
+			.dropdown-menu {
+				margin: 0;
+				background: none;
+				position: relative;
+				top: auto;
+				left: auto;
+				@include border-radius(none);
+				@include box-shadow(none);
+				border: none;
+				> li > a {
+					color: $navbarLinkColor;
+					&:hover {
+						color: $navbarLinkColorHover;
+						background: none;
+					}
+					&:focus {
+						color: $navbarLinkColorActive;
+						background: none;
+					}
+					
+				}
+			}*/
+
+
 	.header-top {
 		nav {
-			border-top: 4px solid $themeColor;
+			//border-top: 4px solid $themeColor;
 		}
 	}
 	.carousel {
