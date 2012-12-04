@@ -17,7 +17,7 @@ var Site = {
 	
 	init: function() {
 		$window.on("throttledresize", Site.resize);
-	/*	$('.nav li.dropdown').on('click.dropdown.data-api', function (e) {
+		$('.nav li.dropdown').on('click.dropdown.data-api', function (e) {
 			if ($window.width() > breakPoint) {
 				e.preventDefault();
 				e.stopPropagation();
@@ -25,7 +25,7 @@ var Site = {
 				window.location = "http://" + window.location.hostname + url;
 				return false;
 			}
-		}) */
+		})
 		Site.resize;
 	},
 	

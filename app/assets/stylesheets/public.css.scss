@@ -278,7 +278,7 @@ padding-left: 24px;
   /* Carousel base class */
   .carousel {
     margin-bottom: $baseLineHeight;
-	border: 1px solid  #424242;
+	border: 1px solid  $navbarBorder;
   }
 
   .carousel-control {
