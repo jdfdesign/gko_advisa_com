@@ -1,5 +1,5 @@
 $themeColor: #1560bd; //a blue
-$brandHeight: 120px;
+$brandHeight: 100px;
 
 @import "variables";
 @import "twitter/bootstrap";
@@ -12,9 +12,9 @@ h3 { font-size: $baseFontSize * 1.25; letter-spacing: 1px;} // ~24px
 h4 { font-size: $baseFontSize * 0.75; } // ~18px
 h5 { font-size: $baseFontSize; text-transform: uppercase;}
 h6 { font-size: $baseFontSize * 1; } // ~12px
-* {
-	@include box-sizing(border-box);
-}
+
+
+.btn:focus,
 a:focus {
   outline: 0;
 }
@@ -24,17 +24,20 @@ a:focus {
  STRUCTURAL LAYOUT 
 ----------------------------------------- */
 body {
-	border-top: 8px solid $themeColor;
-	background-image: asset-url("white_linen_v2.png", image);
+	//border-top: 8px solid $themeColor;
+	background-image: asset-url("black_twill.png", image);
 }
 
 
 
-#main-container {
+#wrapper-wide-body {
 	max-width: 980px;
 	@include center-block();
 }
-
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
 
 // Shared size and type resets
 select,
@@ -71,31 +74,42 @@ form {
  HEADER
 ----------------------------------------- */
 .navbar {
-	margin-bottom: 0;
-	background-image: asset-url("blue_linen_v2.jpg", image);
+	//margin-bottom: 0;
+
+	//background-image: asset-url("blue_linen_v2.jpg", image);
 	.navbar-inner {
 		background: none;
+		border: none;
+		border-bottom: 1px solid $navbarBorder;
+		@include border-radius(none);
 	}
 	.brand {
+		float: right;
+		position: relative;
 		letter-spacing: 4px;
-		text-align: left;
+		text-align: center;
 		text-transform: uppercase;
-		line-height: 42px;
+		line-height: 20px;
 		font-weight: 300;
-		font-size: 32px;
-		margin: 0;
-		padding: 0;
+		font-size: 20px;
+		margin: 12px;
+		padding: 12px;
+		border: 1px solid $navbarBrandColor;
+		@include square($brandHeight);
+		font-family: $serifFontFamily;
 		//background-color: $themeColor;
 		a {
+			position: absolute;
+			bottom: -40px;
 			color: $navbarBrandColor;
 			cursor: pointer;
 			padding: 0;
 			margin: 0 auto;
-			background: transparent image-url("logo.png") center center no-repeat;
+			//background: transparent image-url("logo.png") center center no-repeat;
 			text-decoration: none;
 			display: block;
 			@include square($brandHeight);
-			@include hide-text;
+			//@include hide-text;
 			&:hover {
 				color: $white;
 				text-decoration: none;
@@ -107,10 +121,10 @@ form {
 		font-family: $altFontFamily;
 		text-transform: uppercase;
 		font-size: $baseFontSize - 2;
-		letter-spacing: 1px;
+		letter-spacing: 2px;
 		text-shadow: none;
-		padding: 4px 12px 4px;
-		//border-top: 1px solid #424242;
+		padding: 4px 0 4px;
+		border-top: 1px solid #424242;
 	}
 
 	.nav-collapse {
@@ -121,14 +135,8 @@ form {
 		.dropdown-menu > li > a {
 			color: $navbarLinkColor;
 		}
-		.nav > li > a:hover,
-		.nav > li > a:focus,
-		.dropdown-menu li > a:hover, 
-		.dropdown-menu li > a:focus, 
-		.dropdown-submenu:hover > a {
-			color: $navbarLinkColorHover;
-			background-color: $themeColor;
-			@include gradient-vertical($themeColor, $themeColor);
+		.nav + .nav {
+			margin-left: 24px;
 		}
 	}
 }
@@ -138,6 +146,19 @@ form {
 	//margin-top: 24px;
 }
 .header-top {
+	border-bottom: 1px solid $navbarBorder;
+	@include clearfix;
+	.nav > li > a {
+		font-family: $baseFontFamily;
+		font-size: $baseFontSize - 3;
+		letter-spacing: 1px;
+	}
+	.tools-menu-container {
+		float: right;
+	}
+}
+
+/*.header-top {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -149,51 +170,77 @@ form {
 		font-size: 11px;
 		
 	}
-}
+}*/
 
 a#member-access {
-	@include border-radius(0 0 8px 8px);
-	background-color: $themeColor;
+//	@include border-radius(0 0 8px 8px);
+//	background-color: $themeColor;
+	color: $white;
+	&:hover {
+		color: $themeColor;
+	};
 }
 /*-----------------------------------------
  ASIDE
 ----------------------------------------- */
 aside {
-	margin-top: $baseLineHeight * 2;
+	margin-top: $baseLineHeight;
 	.nav > li > a {
-		font-family: $altFontFamily;
 		text-transform: uppercase;
-		font-size: $baseFontSize - 2;
+		font-size: $baseFontSize - 3;
 		letter-spacing: 1px;
 		text-shadow: none;
-		padding: 4px 15px 4px;
-		border-top: 1px solid $navbarInverseLinkColor;
+		padding: 4px 0 4px;
+		border-top: 1px solid #424242;
+		color:  $grayLight;
 		&:hover {
 			background: transparent;
-			color: $themeColor;
+			color: $white;
 		};
 		&.active {
-			color: $themeColor;
+			color: $white;
 		}
 	}
 }
 /*-----------------------------------------
  FOOTER
 ----------------------------------------- */
+#footer-container {
+	margin-top: $baseLineHeight;
+	border-top: 1px solid $navbarBorder;
+	border-bottom: 1px solid $navbarBorder;
+}
 .footer {
 	.nav > li > a {
-		font-family: $altFontFamily;
+		//font-family: $altFontFamily;
 		text-transform: uppercase;
 		font-size: $baseFontSize - 3;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		text-shadow: none;
 	}
 }
-
+/* CUSTOMIZE THE COPYRIGHT
+  -------------------------------------------------- */
+#copyright-container {
+	a.copyright-author,
+	.nav > li > a {
+		text-transform: lowercase;
+		font-weight: normal;
+		letter-spacing: 0;
+		text-shadow: none;
+		font-size: $baseFontSize - 3;
+	}
+}
 /*-----------------------------------------
  CONTENT
 ----------------------------------------- */
+#main {
+padding-left: 24px;	
+}
 .html-text {
+	//letter-spacing: 1px;
+	
+	font-weight: 300;
 	h1,
 	h2,
 	h3 { line-height: $baseLineHeight * 1.5; }
@@ -203,14 +250,25 @@ aside {
 	h3 {
 		text-transform: uppercase;
 	}
+	h2 {
+		font-size: 18px;
+	}
+	h3 {
+		font-size: 15px;
+	}
+	h4 {
+		font-size: 15px;
+	}
 }
 .page-title {
 	font-weight: normal;
 	margin-bottom: $baseLineHeight;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	text-align: left;
 	text-transform: uppercase;
 	font-weight: 300;
+	color: $white;
+	font-size: 22px;
 }
 
 
@@ -220,13 +278,7 @@ aside {
   /* Carousel base class */
   .carousel {
     margin-bottom: $baseLineHeight;
-  }
-
-  .carousel .container {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+	border: 1px solid  #424242;
   }
 
   .carousel-control {
@@ -259,14 +311,7 @@ aside {
     margin-top: 10px;
   }
 
-/* CUSTOMIZE THE COPYRIGHT
-  -------------------------------------------------- */
-#copyright-container {
-	a {
-		text-transform: uppercase;
-		font-weight: normal;
-	}
-}
+
  /* RESPONSIVE CSS
     -------------------------------------------------- */
 @import "twitter/bootstrap/responsive";
@@ -393,15 +438,24 @@ aside {
 @media (min-width: 980px) {
 
 	.navbar {
-		@extend .navbar-fixed-top;
+		.navbar-inner {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.nav li.dropdown > .dropdown-toggle .caret {
+			display:none;
+		}
 		.nav-collapse {
-			margin-top: 92px;
+			margin-top: 38px;
 			.nav {
-				float: left;
-				margin-left: 0;
+				//float: left;
+				
 				> li > .dropdown-menu {
 					@include border-radius(0 0 8px 8px);
 				}
+			}
+			.nav > li {
+				float: none;
 			}
 		}
 	}
@@ -446,6 +500,6 @@ aside {
 		}
 	}
 	.carousel {
-		margin-top: $navbarHeight - 10;//Why -10 is necessary?
+	//	margin-top: $navbarHeight - 10;//Why -10 is necessary?
   }
 }

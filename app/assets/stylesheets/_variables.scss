@@ -32,13 +32,13 @@ $purple:                #7a43b6;
 
 // Scaffolding
 // -------------------------
-$bodyBackground:        $grayLighter;
-$textColor:             $grayDark;
+$bodyBackground:        $black;
+$textColor:             #979797;
 
 
 // Links
 // -------------------------
-$linkColor:             $grayDarker;
+$linkColor:             $grayLighter;
 $linkColorHover:        darken($linkColor, 15%);
 
 
@@ -48,14 +48,14 @@ $sansFontFamily:        "franklin-gothic-urw", "Helvetica Neue", Helvetica, Aria
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-$baseFontSize:          14px;
+$baseFontSize:          13px;
 $baseFontFamily:        $sansFontFamily;
 $baseLineHeight:        20px;
 $altFontFamily:         "ambroise-std",Georgia, "Times New Roman", Times, serif;
 
 $headingsFontFamily:    $altFontFamily; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:    normal;    // instead of browser default, bold
-$headingsColor:         $grayDarker; // empty to use BS default, $textColor
+$headingsColor:         inherit; // empty to use BS default, $textColor
 
 
 // Component sizing
@@ -177,10 +177,10 @@ $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
 $navbarHeight:                    $brandHeight;
 $navbarBackgroundHighlight:       #252525;
 $navbarBackground:                #252525;
-$navbarBorder:                    lightGrey;
+$navbarBorder:                    $grayDark;
 
-$navbarText:                      #777;
-$navbarLinkColor:                 #777;
+$navbarText:                      $grayLight;
+$navbarLinkColor:                 $grayLight;
 $navbarLinkColorHover:            $white;
 $navbarLinkColorActive:           $navbarLinkColorHover;
 $navbarLinkBackgroundHover:       transparent;
@@ -302,8 +302,8 @@ $fluidGridGutterWidth768:      percentage($gridGutterWidth768/$gridRowWidth768);
 $navbarLinkBackground:            transparent;	
 // Footer (gko addon)
 // -------------------------
-$footerHeight:                    40px;
-$footerBackground:                $navbarBackground;
+$footerHeight:                    60px;
+$footerBackground:                transparent;
 $footerText:                      $navbarText;
 $footerLinkColor:                 $navbarLinkColor;
 $footerLinkBackground:       	  $navbarLinkBackground;
@@ -312,10 +312,10 @@ $footerLinkBackgroundHover:       $navbarLinkBackgroundHover;
 // Copyright (gko addon)
 // -------------------------
 $copyrightHeight:                    40px;
-$copyrightBackground:                $black;
-$copyrightFontSize:                  $baseFontSize - 2;
-$copyrightText:                      #555555;
+$copyrightBackground:                transparent;
+$copyrightFontSize:                  $baseFontSize - 3;
+$copyrightText:                      $footerText;
 $copyrightLinkColor:                 $copyrightText;
 $copyrightLinkBackground:            transparent;
-$copyrightLinkColorHover:            #888888;
+$copyrightLinkColorHover:            $footerLinkColorHover;
 $copyrightLinkBackgroundHover:       $footerLinkBackgroundHover;

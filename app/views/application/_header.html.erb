@@ -2,7 +2,7 @@
 ================================================== -->
 <header class="navbar hide-on-print">
   <div class="navbar-inner">
-	<%= render 'site_title' %>
+	
     <div class="row-fluid">
 	  
 
@@ -13,7 +13,7 @@
       </div>
       <div class="header-nav">
         <!-- Be sure to leave the brand out there if you want it shown -->
-        
+        <%= render 'site_title' %>
 		<%= content_tag(:h4, site.subtitle.html_safe, :id => "site-subtitle") if site.subtitle.present? %>
 
         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->

@@ -1,5 +1,5 @@
 
-<% @background_images = resource.images.empty? ? site.home.images : resource.images %>
+
 <!doctype html>
 <%= render 'html_tag' %>
 <%= render 'head' %>
@@ -8,14 +8,14 @@
 
 <div id="wrapper-wide-body">
   <%= render 'header' %>
-	<%- unless @background_images.empty? -%>
+
+  <div id='main-container' class='container-fluid'>
+	<% @background_images = resource.images.empty? ? site.home.images : resource.images %>
 	<div class="row-fluid"> 
 		<div class="span12">
-			<%= render "images/shared/carousel", :images => @background_images, :image_style => '1400x500#' %>
+			<%= render "images/shared/carousel", :images => @background_images, :image_style => '980x380#' %>
 		</div>
 	</div>
-	<% end %>
-  <div id='main-container' class='container-fluid'>
     <% if content_for?(:page_container) %>
         <%= render "flash" %>
         <%= yield :page_container %>
