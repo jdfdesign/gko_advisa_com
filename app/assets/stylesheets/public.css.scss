@@ -4,6 +4,8 @@ $brandHeight: 100px;
 @import "variables";
 @import "twitter/bootstrap";
 @import "gko/public/base";
+@import "onleft";
+
 
 
 h1 { font-size: $baseFontSize * 2; } // ~38px
@@ -129,12 +131,7 @@ form {
 
 	.nav-collapse {
 		
-		.dropdown-menu {
-			background: #202331;
-		}
-		.dropdown-menu > li > a {
-			color: $navbarLinkColor;
-		}
+
 		.nav + .nav {
 			margin-left: 24px;
 		}
@@ -401,23 +398,7 @@ padding-left: 24px;
 
 
 		.nav-collapse {
-			.nav > li > a,
-			.dropdown-menu li > a, 
-			.dropdown-submenu > a {
-				font-weight: normal;
-			  	@include border-radius(0);
-				padding-left: 20px;
-				padding-right: 20px;
-			}
-			.nav > li > a:hover,
-			.nav > li > a:focus,
-			.dropdown-menu li > a:hover, 
-			.dropdown-menu li > a:focus, 
-			.dropdown-submenu:hover > a {
-				color: $navbarLinkColorHover;
-				background-color: $themeColor;
-				@include gradient-vertical($themeColor, $themeColor);
-			}
+
 		}
 
 		
@@ -451,7 +432,7 @@ padding-left: 24px;
 				//float: left;
 				
 				> li > .dropdown-menu {
-					@include border-radius(0 0 8px 8px);
+					@include border-radius(none);
 				}
 			}
 			.nav > li {

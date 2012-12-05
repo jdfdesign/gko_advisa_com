@@ -11,14 +11,14 @@
 //= require jquery.throttledresize.js
 
 
-var $window,$body,contentApi, breakPoint, isTouch;
+var $window,$body,contentApi, breakPoint, isTouch, currentTheme;
 
 var Site = {
 	
 	init: function() {
 		$window.on("throttledresize", Site.resize);
 		$('.nav li.dropdown').on('click.dropdown.data-api', function (e) {
-			if ($window.width() > breakPoint) {
+			if ($window.width() > breakPoint && !$body.hasClass('center')) {
 				e.preventDefault();
 				e.stopPropagation();
 				var url = $(this).find('a:first').attr("href");
@@ -27,6 +27,28 @@ var Site = {
 			}
 		})
 		Site.resize;
+		
+		$("#themes").css({
+			'position': 'fixed',
+			'top': 0,
+			'left': 0
+		}).find('a').css({
+			'display': 'block',
+			'background': 'black',
+			'color': 'white'
+		}).on('click', function(e) {
+			var $this = $(this),
+				theme = $this.attr('data-theme');
+				
+			if(typeof currentTheme != undefined) {
+				$body.removeClass(currentTheme);
+			}
+			if(typeof theme != undefined) {
+				$body.addClass(theme);
+			}	
+			
+			currentTheme = theme;
+		})
 	},
 	
 	resize: function() {
