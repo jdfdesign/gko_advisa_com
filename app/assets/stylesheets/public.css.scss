@@ -1,10 +1,10 @@
 $themeColor: #1560bd; //a blue
-$brandHeight: 100px;
+$brandHeight: 120px;
 
 @import "variables";
 @import "twitter/bootstrap";
 @import "gko/public/base";
-@import "onleft";
+@import "navbar";
 
 
 
@@ -61,13 +61,18 @@ input[type="color"],
 .uneditable-input {
   height: $baseLineHeight * 2;
   line-height: $baseLineHeight * 2;
+@include box-sizing(border-box);
 }
 // Reset height since textareas have rows
 textarea {
   height: 120px;
 }
 form {
-	@extend .well;
+	//background-color: $grayDarker;
+	//border: $black;
+	//@include box-shadow("inset 2px 3px 5px #000000, 0px 1px 1px #333");
+	//@include box-sizing(border-box);
+	margin: $baseLineHeight 0;
 	input, textarea {
 		width: 100%;
 	}
@@ -86,7 +91,7 @@ form {
 		@include border-radius(none);
 	}
 	.brand {
-		float: right;
+		float: left;
 		position: relative;
 		letter-spacing: 4px;
 		text-align: center;
@@ -94,24 +99,24 @@ form {
 		line-height: 20px;
 		font-weight: 300;
 		font-size: 20px;
-		margin: 12px;
-		padding: 12px;
-		border: 1px solid $navbarBrandColor;
+		margin: 0;
+		padding: 8px 0;
+		//border: 1px solid $navbarBrandColor;
 		@include square($brandHeight);
 		font-family: $serifFontFamily;
 		//background-color: $themeColor;
 		a {
 			position: absolute;
-			bottom: -40px;
+			//bottom: -40px;
 			color: $navbarBrandColor;
 			cursor: pointer;
 			padding: 0;
 			margin: 0 auto;
-			//background: transparent image-url("logo.png") center center no-repeat;
+			background: transparent image-url("logo.png") center center no-repeat;
 			text-decoration: none;
 			display: block;
 			@include square($brandHeight);
-			//@include hide-text;
+			@include hide-text;
 			&:hover {
 				color: $white;
 				text-decoration: none;
@@ -129,13 +134,6 @@ form {
 		border-top: 1px solid #424242;
 	}
 
-	.nav-collapse {
-		
-
-		.nav + .nav {
-			margin-left: 24px;
-		}
-	}
 }
 
 .header-nav {
@@ -237,6 +235,8 @@ padding-left: 24px;
 .html-text {
 	//letter-spacing: 1px;
 	
+	font-size: 15px;
+	line-height: 22px;
 	font-weight: 300;
 	h1,
 	h2,
@@ -246,6 +246,7 @@ padding-left: 24px;
 	}
 	h3 {
 		text-transform: uppercase;
+		color: $white;
 	}
 	h2 {
 		font-size: 18px;
@@ -254,7 +255,14 @@ padding-left: 24px;
 		font-size: 15px;
 	}
 	h4 {
+		margin-top: $baseLineHeight * 1.5;
 		font-size: 15px;
+		text-decoration: underline;
+		color: $white;
+	}
+	p.lead {
+		font-family: $serifFontFamily;
+		font-style: italic;
 	}
 }
 .page-title {
@@ -417,7 +425,6 @@ padding-left: 24px;
 
 
 @media (min-width: 980px) {
-
 	.navbar {
 		.navbar-inner {
 			padding-left: 0;
@@ -428,59 +435,6 @@ padding-left: 24px;
 		}
 		.nav-collapse {
 			margin-top: 38px;
-			.nav {
-				//float: left;
-				
-				> li > .dropdown-menu {
-					@include border-radius(none);
-				}
-			}
-			.nav > li {
-				float: none;
-			}
 		}
 	}
-				/*li.dropdown > .dropdown-toggle .caret,
-				li.dropdown.open > .dropdown-toggle .caret, 
-				li.dropdown.active > .dropdown-toggle .caret, 
-				li.dropdown.open.active > .dropdown-toggle .caret {
-					display:none;
-				}
-			}
-			.nav > li > .dropdown-menu:before,
-			.nav > li > .dropdown-menu:after{
-				display:none;
-			}
-			.dropdown-menu {
-				margin: 0;
-				background: none;
-				position: relative;
-				top: auto;
-				left: auto;
-				@include border-radius(none);
-				@include box-shadow(none);
-				border: none;
-				> li > a {
-					color: $navbarLinkColor;
-					&:hover {
-						color: $navbarLinkColorHover;
-						background: none;
-					}
-					&:focus {
-						color: $navbarLinkColorActive;
-						background: none;
-					}
-					
-				}
-			}*/
-
-
-	.header-top {
-		nav {
-			//border-top: 4px solid $themeColor;
-		}
-	}
-	.carousel {
-	//	margin-top: $navbarHeight - 10;//Why -10 is necessary?
-  }
 }

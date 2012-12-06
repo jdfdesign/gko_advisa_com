@@ -1,0 +1,77 @@
+.navbar {
+	.nav-collapse {
+		//float: right;
+		.nav {
+			position: relative;
+			left: 100px;
+			float: left;
+			> li {
+				float: none;
+			}
+		}
+		.nav + .nav {
+			float: right;
+			left: auto;
+		}
+		
+		li.dropdown > .dropdown-toggle .caret,
+		li.dropdown.open > .dropdown-toggle .caret, 
+		li.dropdown.active > .dropdown-toggle .caret, 
+		li.dropdown.open.active > .dropdown-toggle .caret {
+			display:none;
+		}
+		.nav > li > .dropdown-menu:before,
+		.nav > li > .dropdown-menu:after{
+			display:none;
+		}
+		.dropdown-menu {
+
+			margin: 0;
+			background: none;
+			position: relative;
+			top: auto;
+			left: auto;
+			@include border-radius(none);
+			@include box-shadow(none);
+			border: none;
+			> li > a {
+				color: $navbarLinkColor;
+				&:hover {
+					color: $navbarLinkColorHover;
+					background: none;
+				}
+				&:focus {
+					color: $navbarLinkColorActive;
+					background: none;
+				}
+
+			}
+		}
+
+		.nav > li > a,
+		.dropdown-menu li > a, 
+		.dropdown-submenu > a {
+			font-weight: normal;
+		  	@include border-radius(0);
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.dropdown-menu > li > a {
+			color: $navbarLinkColor;
+			padding-left: 44px;
+			&:first-child {
+				border-top: 0;
+			};
+		}
+		.nav > li > a:hover,
+		.nav > li > a:focus,
+		.dropdown-menu li > a:hover, 
+		.dropdown-menu li > a:focus, 
+		.dropdown-submenu:hover > a {
+			color: $white;
+			background: transparent;
+		}
+	}
+	
+}
+
