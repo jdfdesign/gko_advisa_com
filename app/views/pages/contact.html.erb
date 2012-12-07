@@ -1,29 +1,42 @@
 <div class="row-fluid"> 
-	<div class="span8">
-		<%= render_page_title(resource.title) %>
-		<%= render_html_text(resource.body) %>
+	<div class="span6">
+		<%= render_page_title(@page.title) %>
+		<%= render_html_text(@page.body) %>
+	</div>
+	<div class="span6">
 		<%
 		   privacy_text = t(:'.privacy_policy')
 		%>
-		<%= simple_form_for(:inquiry, :url => inquiries_path, :method => :post,
-		                    :html => {:class => [:inquiry]}) do |form| %>
+		<%= simple_form_for(:contact_form, :url => contact_forms_path, :method => :post, :html => {:class => [:inquiry]}) do |f| %>
 		    <%= hidden_field_tag(:return_to, request.url) %>
-		    <%= form.hidden_field :site_id, :value => site.id %>
-		    <%= form.error_notification %>
-		    <%= form.input :name, :label => false, :hint => '', :placeholder => t(:"simple_form.labels.inquiry.name") %>
-		    <%= form.input :email, :label => false, :hint => false, :placeholder => t(:"simple_form.labels.inquiry.email") %>
-		    <%= form.input :phone, :label => false, :hint => false, :required => false, :placeholder => t(:"simple_form.labels.inquiry.phone") %>
-		    <%= form.input :message, :as => :text, :label => false, :hint => false, :placeholder => t(:"simple_form.labels.inquiry.message"), :input_html => {:rows => 6} %>
-			<%= render 'anti_spam_field', :f => form %>
-
+		    <%= f.error_notification %>
+		    <%= f.input :firstname, 
+						:label => false, 
+						:hint => '', 
+						:placeholder => t(:"simple_form.labels.inquiry.name") %>
+		    <%= f.input :email, 
+						:label => false, 
+						:hint => false, 
+						:placeholder => t(:"simple_form.labels.inquiry.email") %>
+		    <%= f.input :phone, 
+						:label => false, 
+						:hint => false, 
+						:required => false, 
+						:placeholder => t(:"simple_form.labels.inquiry.phone") %>
+		    <%= f.input :message, 
+						:as => :text, 
+						:label => false, 
+						:hint => false, 
+						:placeholder => t(:"simple_form.labels.inquiry.message"), 
+						:input_html => {:rows => 6} %>
+			<%= f.input :nickname, 
+						:as => :hidden,
+						:hint => 'Leave this field blank!' %>
 		    <div class='controls'>
-		      <%= form.button :submit, t("send_inquiry"), :class => 'btn btn-block btn-large btn-inverse', :disable_with => "Submitting..." do %>	<i class="icon-arrow-right"></i>
+		      <%= f.button :submit, t("send_inquiry"), :class => 'btn btn-block btn-large btn-inverse', :disable_with => "Submitting..." do %>	<i class="icon-arrow-right"></i>
 			<% end %>
 			</div>
 		<% end %>
 		<%= "<p class='small'><em>(*): champs obligatoires.<br>Chaque information communiquée sera conservée confidentielle.</em></p>".html_safe %>
-	</div>
-	<div class="span4">
-
 	</div>	
 </div>

@@ -6,6 +6,7 @@
 //= require twitter/bootstrap/button.js
 //= require twitter/bootstrap/carousel.js
 //= require twitter/bootstrap/collapse.js
+//= require twitter/bootstrap/tab.js
 //= require twitter/bootstrap/dropdown.js
 //= require twitter/bootstrap/modal.js
 //= require jquery.throttledresize.js

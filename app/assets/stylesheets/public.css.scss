@@ -1,5 +1,5 @@
 $themeColor: #1560bd; //a blue
-$brandHeight: 120px;
+$brandHeight: 140px;
 
 @import "variables";
 @import "twitter/bootstrap";
@@ -77,6 +77,18 @@ form {
 		width: 100%;
 	}
 }
+
+.map {
+	background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+	background-image: asset-url("carte_stbarth.png", image);
+	width: 450px;
+	height: 384px;
+	display: block;
+	overflow: hidden;
+	@include hide-text;
+}
 /*-----------------------------------------
  HEADER
 ----------------------------------------- */
@@ -127,13 +139,15 @@ form {
 	.nav > li > a {
 		font-family: $altFontFamily;
 		text-transform: uppercase;
-		font-size: $baseFontSize - 2;
+		
 		letter-spacing: 2px;
 		text-shadow: none;
 		padding: 4px 0 4px;
 		border-top: 1px solid #424242;
 	}
-
+	.dropdown-menu li > a {
+		font-size: $baseFontSize - 2;
+	}
 }
 
 .header-nav {
@@ -263,6 +277,25 @@ padding-left: 24px;
 	p.lead {
 		font-family: $serifFontFamily;
 		font-style: italic;
+	}
+	.nav-tabs > .active > a,
+	.nav-tabs > li > a {
+		font-size: 15px;
+		text-transform: uppercase;
+		font-family: $serifFontFamily;
+		color: $white;
+		&:hover {
+			color: $grayDark;
+		};
+	}
+	 
+	.nav-tabs > .active > a:hover {
+		color: $white;
+	}
+	.html-text h3 {
+		text-transform: uppercase;
+		font-family: $serifFontFamily;
+		color: white;
 	}
 }
 .page-title {

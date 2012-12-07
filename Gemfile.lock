@@ -1,11 +1,11 @@
 GIT
   remote: git@github.com:jdfdesign/gko_cms3.git
-  revision: 9d9ffe6479cfd67c69c828d04657f40e987dce00
+  revision: 424203405e0b17f3595f59ca6aa3a7fa65b5f74e
   specs:
-    gko_auth (0.5.22)
+    gko_auth (0.5.23)
       cancan (= 1.6.8)
       devise (= 2.1.2)
-    gko_core (0.5.22)
+    gko_core (0.5.23)
       RedCloth (= 4.2.9)
       activesupport-slices (= 0.0.2)
       acts_as_indexed (~> 0.7.7)
@@ -29,6 +29,7 @@ GIT
       jquery-rails (= 2.0.3)
       json
       letter_opener
+      mail_form (~> 1.3.0)
       mobile-fu
       mysql2 (~> 0.3.11)
       nested_set (= 1.7.0)
@@ -45,13 +46,13 @@ GIT
       uglifier (>= 1.0.3)
       uuid (= 2.3.5)
       will_paginate (~> 3.0.2)
-    gko_documents (0.5.22)
+    gko_documents (0.5.23)
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
-    gko_images (0.5.22)
-    gko_inquiries (0.5.22)
+    gko_images (0.5.23)
+    gko_inquiries (0.5.23)
       filters_spam (~> 0.2)
-    gko_themes (0.5.22)
+    gko_themes (0.5.23)
       less-rails-bootstrap
       rubyzip (= 0.9.6.1)
 
@@ -188,6 +189,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mail_form (1.3.0)
     mime-types (1.19)
     mobile-fu (1.1.1)
       rack-mobile-detect
@@ -296,12 +298,12 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.2)
-  gko_auth (= 0.5.22)!
-  gko_core (= 0.5.22)!
-  gko_documents (= 0.5.22)!
-  gko_images (= 0.5.22)!
-  gko_inquiries (= 0.5.22)!
-  gko_themes (= 0.5.22)!
+  gko_auth (= 0.5.23)!
+  gko_core (= 0.5.23)!
+  gko_documents (= 0.5.23)!
+  gko_images (= 0.5.23)!
+  gko_inquiries (= 0.5.23)!
+  gko_themes (= 0.5.23)!
   iconv
   sass-rails (~> 3.2.5)
   uglifier (>= 1.0.3)
