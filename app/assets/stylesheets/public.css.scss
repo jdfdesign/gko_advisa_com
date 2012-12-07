@@ -297,6 +297,14 @@ padding-left: 24px;
 		font-family: $serifFontFamily;
 		color: white;
 	}
+	
+	h5 {
+		font-family: $baseFontFamily;
+		font-size: $baseFontSize; 
+		letter-spacing: 1px;
+		text-transform: none;
+		color: $white;
+	}
 }
 .page-title {
 	font-weight: normal;
