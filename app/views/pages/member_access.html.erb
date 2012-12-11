@@ -1,17 +1,23 @@
-<article class="row-fluid"> 
-	<div class="span6">
-		<%= render_page_title(resource.title) %>
-		<%= render_html_text(resource.body) %>
+<article class="member-access"> 
+	<div class="row-fluid">
+		<div class="span12">
+			<%= render_page_title(resource.title) %>
+		</div>
 	</div>
-	<div class="span6">
-		<%= simple_form_for :user, 
-							:url => user_session_path, 
-							:html => { :data => { :remote => true, :type => :json }, :id => "signin-form" } do |f| %>
-			<%= f.input :email, :placeholder => "Your Email Address", :label => false, :hint => false %>
-			<%= f.input :password, :placeholder => "Your Password", :label => false, :hint => false %>
-			<%= f.button :submit, "Se connecter", :class => 'btn btn-block btn-large btn-inverse', :disable_with => "Submitting..." do %>
-					<i class="icon-arrow-right"></i>
+	<div class="row-fluid">
+		<div class="span8">
+			<%= render_html_text(resource.body) %>
+		</div>
+		<div class="span4">
+			<%= simple_form_for :user, 
+								:url => user_session_path, 
+								:html => { :data => { :remote => true, :type => :json }, :id => "signin-form" } do |f| %>
+				<%= f.input :email, :placeholder => "Your Email Address", :label => false, :hint => false %>
+				<%= f.input :password, :placeholder => "Your Password", :label => false, :hint => false %>
+				<%= f.button :submit, "Se connecter", :class => 'btn btn-block btn-large btn-inverse', :disable_with => "Submitting..." do %>
+						<i class="icon-arrow-right"></i>
+				<% end %>
 			<% end %>
-		<% end %>
+		</div>
 	</div>
 </article>
