@@ -6891,13 +6891,14 @@ form input, form textarea {
   text-shadow: none;
   background-color: transparent;
   border: 0;
+  overflow: hidden;
 }
-/* line 136, ../../app/assets/stylesheets/public.css.scss */
+/* line 137, ../../app/assets/stylesheets/public.css.scss */
 .navbar .brand a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 143, ../../app/assets/stylesheets/public.css.scss */
+/* line 144, ../../app/assets/stylesheets/public.css.scss */
 .navbar .dropdown-menu li > a,
 .navbar .nav > li > a {
   font-family: "ambroise-std", Georgia, "Times New Roman", Times, serif;
@@ -6907,12 +6908,12 @@ form input, form textarea {
   padding: 4px 0 4px;
   border-top: 1px solid #424242;
 }
-/* line 152, ../../app/assets/stylesheets/public.css.scss */
+/* line 153, ../../app/assets/stylesheets/public.css.scss */
 .navbar .dropdown-menu li > a {
   font-size: 11px;
 }
 
-/* line 157, ../../app/assets/stylesheets/public.css.scss */
+/* line 158, ../../app/assets/stylesheets/public.css.scss */
 .header-nav {
   *zoom: 1;
 }
@@ -6927,7 +6928,7 @@ form input, form textarea {
   clear: both;
 }
 
-/* line 161, ../../app/assets/stylesheets/public.css.scss */
+/* line 162, ../../app/assets/stylesheets/public.css.scss */
 .header-top {
   border-bottom: 1px solid #333333;
   *zoom: 1;
@@ -6942,13 +6943,13 @@ form input, form textarea {
 .header-top:after {
   clear: both;
 }
-/* line 164, ../../app/assets/stylesheets/public.css.scss */
+/* line 165, ../../app/assets/stylesheets/public.css.scss */
 .header-top .nav > li > a {
   font-family: "franklin-gothic-urw", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 10px;
   letter-spacing: 1px;
 }
-/* line 169, ../../app/assets/stylesheets/public.css.scss */
+/* line 170, ../../app/assets/stylesheets/public.css.scss */
 .header-top .tools-menu-container {
   float: right;
 }
@@ -6966,11 +6967,11 @@ form input, form textarea {
 		
 	}
 }*/
-/* line 188, ../../app/assets/stylesheets/public.css.scss */
+/* line 189, ../../app/assets/stylesheets/public.css.scss */
 a#member-access {
   color: white;
 }
-/* line 192, ../../app/assets/stylesheets/public.css.scss */
+/* line 193, ../../app/assets/stylesheets/public.css.scss */
 a#member-access:hover {
   color: #1560bd;
 }
@@ -6978,11 +6979,11 @@ a#member-access:hover {
 /*-----------------------------------------
  ASIDE
 ----------------------------------------- */
-/* line 199, ../../app/assets/stylesheets/public.css.scss */
+/* line 200, ../../app/assets/stylesheets/public.css.scss */
 aside {
   margin-top: 20px;
 }
-/* line 201, ../../app/assets/stylesheets/public.css.scss */
+/* line 202, ../../app/assets/stylesheets/public.css.scss */
 aside .nav > li > a {
   text-transform: uppercase;
   font-size: 10px;
@@ -6992,12 +6993,12 @@ aside .nav > li > a {
   border-top: 1px solid #424242;
   color: #999999;
 }
-/* line 209, ../../app/assets/stylesheets/public.css.scss */
+/* line 210, ../../app/assets/stylesheets/public.css.scss */
 aside .nav > li > a:hover {
   background: transparent;
   color: white;
 }
-/* line 213, ../../app/assets/stylesheets/public.css.scss */
+/* line 214, ../../app/assets/stylesheets/public.css.scss */
 aside .nav > li > a.active {
   color: white;
 }
@@ -7005,14 +7006,14 @@ aside .nav > li > a.active {
 /*-----------------------------------------
  FOOTER
 ----------------------------------------- */
-/* line 221, ../../app/assets/stylesheets/public.css.scss */
+/* line 222, ../../app/assets/stylesheets/public.css.scss */
 #footer-container {
   margin-top: 20px;
   border-top: 1px solid #333333;
   border-bottom: 1px solid #333333;
 }
 
-/* line 227, ../../app/assets/stylesheets/public.css.scss */
+/* line 228, ../../app/assets/stylesheets/public.css.scss */
 .footer .nav > li > a {
   text-transform: uppercase;
   font-size: 10px;
@@ -7022,7 +7023,7 @@ aside .nav > li > a.active {
 
 /* CUSTOMIZE THE COPYRIGHT
   -------------------------------------------------- */
-/* line 239, ../../app/assets/stylesheets/public.css.scss */
+/* line 240, ../../app/assets/stylesheets/public.css.scss */
 #copyright-container a.copyright-author,
 #copyright-container .nav > li > a {
   text-transform: lowercase;
@@ -7035,43 +7036,43 @@ aside .nav > li > a.active {
 /*-----------------------------------------
  CONTENT
 ----------------------------------------- */
-/* line 251, ../../app/assets/stylesheets/public.css.scss */
+/* line 252, ../../app/assets/stylesheets/public.css.scss */
 .html-text {
   font-size: 15px;
   line-height: 22px;
   font-weight: 300;
 }
-/* line 259, ../../app/assets/stylesheets/public.css.scss */
+/* line 260, ../../app/assets/stylesheets/public.css.scss */
 .html-text h1,
 .html-text h2,
 .html-text h3 {
   line-height: 30px;
 }
-/* line 260, ../../app/assets/stylesheets/public.css.scss */
+/* line 261, ../../app/assets/stylesheets/public.css.scss */
 .html-text h2 {
   text-transform: uppercase;
 }
-/* line 263, ../../app/assets/stylesheets/public.css.scss */
+/* line 264, ../../app/assets/stylesheets/public.css.scss */
 .html-text h3 {
   text-transform: uppercase;
   color: white;
 }
-/* line 267, ../../app/assets/stylesheets/public.css.scss */
+/* line 268, ../../app/assets/stylesheets/public.css.scss */
 .html-text h2 {
   font-size: 18px;
 }
-/* line 270, ../../app/assets/stylesheets/public.css.scss */
+/* line 271, ../../app/assets/stylesheets/public.css.scss */
 .html-text h3 {
   font-size: 15px;
 }
-/* line 273, ../../app/assets/stylesheets/public.css.scss */
+/* line 274, ../../app/assets/stylesheets/public.css.scss */
 .html-text h4 {
   margin-top: 30px;
   font-size: 15px;
   text-decoration: underline;
   color: white;
 }
-/* line 279, ../../app/assets/stylesheets/public.css.scss */
+/* line 280, ../../app/assets/stylesheets/public.css.scss */
 .html-text blockquote {
   font-size: 14px;
   font-style: italic;
@@ -7082,7 +7083,7 @@ aside .nav > li > a.active {
   padding-left: 92px;
   text-align: left;
 }
-/* line 289, ../../app/assets/stylesheets/public.css.scss */
+/* line 290, ../../app/assets/stylesheets/public.css.scss */
 .html-text blockquote:before {
   display: block;
   content: "\201C";
@@ -7092,7 +7093,7 @@ aside .nav > li > a.active {
   top: -32px;
   color: #7a7a7a;
 }
-/* line 298, ../../app/assets/stylesheets/public.css.scss */
+/* line 299, ../../app/assets/stylesheets/public.css.scss */
 .html-text blockquote cite {
   color: #999999;
   font-size: 14px;
@@ -7100,16 +7101,16 @@ aside .nav > li > a.active {
   margin-top: 5px;
   text-align: right;
 }
-/* line 306, ../../app/assets/stylesheets/public.css.scss */
+/* line 307, ../../app/assets/stylesheets/public.css.scss */
 .html-text blockquote cite:before {
   content: "\2014 \2009";
 }
-/* line 309, ../../app/assets/stylesheets/public.css.scss */
+/* line 310, ../../app/assets/stylesheets/public.css.scss */
 .html-text p.lead {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
 }
-/* line 314, ../../app/assets/stylesheets/public.css.scss */
+/* line 315, ../../app/assets/stylesheets/public.css.scss */
 .html-text .nav-tabs > .active > a,
 .html-text .nav-tabs > li > a {
   font-size: 13px;
@@ -7117,22 +7118,22 @@ aside .nav > li > a.active {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
 }
-/* line 319, ../../app/assets/stylesheets/public.css.scss */
+/* line 320, ../../app/assets/stylesheets/public.css.scss */
 .html-text .nav-tabs > .active > a:hover,
 .html-text .nav-tabs > li > a:hover {
   color: #333333;
 }
-/* line 324, ../../app/assets/stylesheets/public.css.scss */
+/* line 325, ../../app/assets/stylesheets/public.css.scss */
 .html-text .nav-tabs > .active > a:hover {
   color: white;
 }
-/* line 327, ../../app/assets/stylesheets/public.css.scss */
+/* line 328, ../../app/assets/stylesheets/public.css.scss */
 .html-text .html-text h3 {
   text-transform: uppercase;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
 }
-/* line 333, ../../app/assets/stylesheets/public.css.scss */
+/* line 334, ../../app/assets/stylesheets/public.css.scss */
 .html-text h5 {
   font-family: "franklin-gothic-urw", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -7140,7 +7141,7 @@ aside .nav > li > a.active {
   text-transform: none;
 }
 
-/* line 340, ../../app/assets/stylesheets/public.css.scss */
+/* line 341, ../../app/assets/stylesheets/public.css.scss */
 .page-title {
   font-weight: normal;
   margin-bottom: 20px;
@@ -7155,13 +7156,13 @@ aside .nav > li > a.active {
 /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
 /* Carousel base class */
-/* line 356, ../../app/assets/stylesheets/public.css.scss */
+/* line 357, ../../app/assets/stylesheets/public.css.scss */
 .carousel {
   margin-bottom: 20px;
   border: 1px solid #333333;
 }
 
-/* line 361, ../../app/assets/stylesheets/public.css.scss */
+/* line 362, ../../app/assets/stylesheets/public.css.scss */
 .carousel-control {
   background-color: transparent;
   border: 0;
@@ -7170,12 +7171,12 @@ aside .nav > li > a.active {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-/* line 369, ../../app/assets/stylesheets/public.css.scss */
+/* line 370, ../../app/assets/stylesheets/public.css.scss */
 .carousel img {
   min-width: 100%;
 }
 
-/* line 373, ../../app/assets/stylesheets/public.css.scss */
+/* line 374, ../../app/assets/stylesheets/public.css.scss */
 .carousel-caption {
   background-color: transparent;
   position: static;
@@ -7184,7 +7185,7 @@ aside .nav > li > a.active {
   margin-bottom: 100px;
 }
 
-/* line 381, ../../app/assets/stylesheets/public.css.scss */
+/* line 382, ../../app/assets/stylesheets/public.css.scss */
 .carousel-caption h1,
 .carousel-caption .lead {
   margin: 0;
@@ -7193,7 +7194,7 @@ aside .nav > li > a.active {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-/* line 387, ../../app/assets/stylesheets/public.css.scss */
+/* line 388, ../../app/assets/stylesheets/public.css.scss */
 .carousel-caption .btn {
   margin-top: 10px;
 }
@@ -8602,19 +8603,19 @@ aside .nav > li > a.active {
   }
 }
 @media (max-width: 767px) {
-  /* line 398, ../../app/assets/stylesheets/public.css.scss */
+  /* line 399, ../../app/assets/stylesheets/public.css.scss */
   body {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 402, ../../app/assets/stylesheets/public.css.scss */
+  /* line 403, ../../app/assets/stylesheets/public.css.scss */
   #main-container {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  /* line 406, ../../app/assets/stylesheets/public.css.scss */
+  /* line 407, ../../app/assets/stylesheets/public.css.scss */
   .carousel {
     margin-top: 0;
     margin-left: -20px;
@@ -8622,46 +8623,46 @@ aside .nav > li > a.active {
     margin-bottom: 0;
   }
 
-  /* line 412, ../../app/assets/stylesheets/public.css.scss */
+  /* line 413, ../../app/assets/stylesheets/public.css.scss */
   .carousel-caption {
     width: 65%;
     padding: 0 70px;
     margin-bottom: 40px;
   }
 
-  /* line 417, ../../app/assets/stylesheets/public.css.scss */
+  /* line 418, ../../app/assets/stylesheets/public.css.scss */
   .carousel-caption h1 {
     font-size: 30px;
   }
 
-  /* line 421, ../../app/assets/stylesheets/public.css.scss */
+  /* line 422, ../../app/assets/stylesheets/public.css.scss */
   .carousel-caption .lead,
   .carousel-caption .btn {
     font-size: 18px;
   }
 
-  /* line 424, ../../app/assets/stylesheets/public.css.scss */
+  /* line 425, ../../app/assets/stylesheets/public.css.scss */
   aside {
     margin-top: 0;
   }
-  /* line 426, ../../app/assets/stylesheets/public.css.scss */
+  /* line 427, ../../app/assets/stylesheets/public.css.scss */
   aside .nav > li > a {
     border-top: none;
     border-bottom: 1px solid #999999;
   }
-  /* line 430, ../../app/assets/stylesheets/public.css.scss */
+  /* line 431, ../../app/assets/stylesheets/public.css.scss */
   aside .nav > li > a:hover, aside .nav > li > a:focus {
     background-color: #1560bd;
     color: white;
   }
-  /* line 434, ../../app/assets/stylesheets/public.css.scss */
+  /* line 435, ../../app/assets/stylesheets/public.css.scss */
   aside .nav > li > a.active {
     background-color: #1560bd;
     color: white;
   }
 }
 @media (max-width: 979px) {
-  /* line 444, ../../app/assets/stylesheets/public.css.scss */
+  /* line 445, ../../app/assets/stylesheets/public.css.scss */
   .navbar-inner {
     background-color: #1560bd;
     -webkit-border-radius: 0;
@@ -8674,17 +8675,17 @@ aside .nav > li > a.active {
     border: none;
   }
 
-  /* line 453, ../../app/assets/stylesheets/public.css.scss */
+  /* line 454, ../../app/assets/stylesheets/public.css.scss */
   .navbar, .navbar-fixed-top {
     margin-bottom: 0;
   }
-  /* line 455, ../../app/assets/stylesheets/public.css.scss */
+  /* line 456, ../../app/assets/stylesheets/public.css.scss */
   .navbar .brand, .navbar-fixed-top .brand {
     float: none;
     text-align: center;
     margin: 20px 0;
   }
-  /* line 465, ../../app/assets/stylesheets/public.css.scss */
+  /* line 466, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav-collapse nav,
   .navbar .nav-collapse .nav, .navbar-fixed-top .nav-collapse nav,
   .navbar-fixed-top .nav-collapse .nav {
@@ -8707,38 +8708,38 @@ aside .nav > li > a.active {
   .navbar-fixed-top .nav-collapse .nav:after {
     clear: both;
   }
-  /* line 471, ../../app/assets/stylesheets/public.css.scss */
+  /* line 472, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav-collapse .nav > li,
   .navbar .nav-collapse .dropdown-menu li, .navbar-fixed-top .nav-collapse .nav > li,
   .navbar-fixed-top .nav-collapse .dropdown-menu li {
     border-bottom: 1px solid #999999;
   }
-  /* line 475, ../../app/assets/stylesheets/public.css.scss */
+  /* line 476, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav-collapse .dropdown-menu li:last-child, .navbar-fixed-top .nav-collapse .dropdown-menu li:last-child {
     border-bottom: none;
   }
 
-  /* line 486, ../../app/assets/stylesheets/public.css.scss */
+  /* line 487, ../../app/assets/stylesheets/public.css.scss */
   .header-nav {
     margin-top: 0;
   }
 
-  /* line 490, ../../app/assets/stylesheets/public.css.scss */
+  /* line 491, ../../app/assets/stylesheets/public.css.scss */
   .carousel .item .carousel img {
     width: auto;
   }
 }
 @media (min-width: 980px) {
-  /* line 501, ../../app/assets/stylesheets/public.css.scss */
+  /* line 502, ../../app/assets/stylesheets/public.css.scss */
   .navbar .navbar-inner {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 505, ../../app/assets/stylesheets/public.css.scss */
+  /* line 506, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav li.dropdown > .dropdown-toggle .caret {
     display: none;
   }
-  /* line 508, ../../app/assets/stylesheets/public.css.scss */
+  /* line 509, ../../app/assets/stylesheets/public.css.scss */
   .navbar .nav-collapse {
     margin-top: 38px;
   }
