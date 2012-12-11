@@ -1,4 +1,4 @@
-<% cache [action_name, I18n.locale, resource.site, resource] do %>
+<%# cache [action_name, I18n.locale, resource.site, resource] do %>
 	<% @background_images = resource.images.empty? ? site.homes.first.images : resource.images %>
 	<% content_for :slideshow do %>
 	<div class="row-fluid"> 
@@ -13,4 +13,4 @@
 			<%= render_html_text(resource.body) %>
 		</div>
 	</div>
-<% end %>
+<%# end %>

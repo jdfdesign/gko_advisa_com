@@ -133,6 +133,7 @@ form {
 			display: block;
 			@include square($brandHeight);
 			@include hide-text;
+			overflow: hidden;
 			&:hover {
 				color: $white;
 				text-decoration: none;
