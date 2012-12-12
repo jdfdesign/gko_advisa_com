@@ -117,13 +117,7 @@ form {
 		font-size: 20px;
 		margin: 0;
 		padding: 8px 0;
-		//border: 1px solid $navbarBrandColor;
-		@include square($brandHeight);
-		font-family: $serifFontFamily;
-		//background-color: $themeColor;
 		a {
-			position: absolute;
-			//bottom: -40px;
 			color: $navbarBrandColor;
 			cursor: pointer;
 			padding: 0;
@@ -144,7 +138,6 @@ form {
 	.nav > li > a {
 		font-family: $altFontFamily;
 		text-transform: uppercase;
-		
 		letter-spacing: 2px;
 		text-shadow: none;
 		padding: 4px 0 4px;
@@ -258,24 +251,29 @@ aside {
 	h1,
 	h2,
 	h3 { line-height: $baseLineHeight * 1.5; }
-	h2 {
+	h2,
+	h3 {
 		text-transform: uppercase;
 	}
 	h3 {
-		text-transform: uppercase;
-		color: $white;
+		color: $grayLight;
+		font-family: $serifFontFamily;
+		font-size: 15px;
 	}
 	h2 {
 		font-size: 18px;
-	}
-	h3 {
-		font-size: 15px;
 	}
 	h4 {
 		margin-top: $baseLineHeight * 1.5;
 		font-size: 15px;
 		text-decoration: underline;
-		color: $white;
+		color: $grayLighter;
+	}
+	h5 {
+		font-family: $baseFontFamily;
+		font-size: $baseFontSize; 
+		letter-spacing: 1px;
+		text-transform: none;
 	}
 	blockquote {
 		font-size: 14px;
@@ -325,17 +323,9 @@ aside {
 	.nav-tabs > .active > a:hover {
 		color: $white;
 	}
-	.html-text h3 {
-		text-transform: uppercase;
-		font-family: $serifFontFamily;
-		color: white;
-	}
-	
-	h5 {
-		font-family: $baseFontFamily;
-		font-size: $baseFontSize; 
-		letter-spacing: 1px;
-		text-transform: none;
+
+	.btn {
+		margin: $baseLineHeight 0;
 	}
 }
 .page-title {
@@ -479,7 +469,23 @@ aside {
 
 
 		.nav-collapse {
-
+			.nav,
+			.nav + .nav {
+				clear: both;
+				float: none;
+				left: 0;
+				margin: 0;
+			}
+		}
+		
+		.dropdown-menu li > a,
+		.nav > li > a {
+			font-family: $altFontFamily;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			text-shadow: none;
+			padding: 4px 0 4px;
+			border-top: 1px solid #424242;
 		}
 
 		
@@ -491,6 +497,12 @@ aside {
 		.carousel img {
 	        width: auto;
 		}	
+	}
+	footer .nav > li > a {
+		padding-top: 6px;
+		padding-bottom: 6px;
+		border-bottom: 1px solid #424242;
+		border-right: 1px solid #424242;
 	}
 	
 }
