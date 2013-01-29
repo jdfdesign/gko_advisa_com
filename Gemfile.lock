@@ -1,11 +1,12 @@
 GIT
   remote: git@github.com:jdfdesign/gko_cms3.git
-  revision: be7a0796ca86c18bd97469f4b6a06a353daa1b37
+  revision: 160a9a2e14cf2ac802d8a2c91695211933bac040
+  branch: 0.6.24-stable
   specs:
-    gko_auth (0.5.24)
-      cancan (= 1.6.8)
-      devise (= 2.1.2)
-    gko_core (0.5.24)
+    gko_auth (0.6.24.RC1)
+      cancan (>= 1.6.8)
+      devise (>= 2.1.2)
+    gko_core (0.6.24.RC1)
       RedCloth (= 4.2.9)
       activesupport-slices (= 0.0.2)
       acts_as_indexed (~> 0.7.7)
@@ -28,7 +29,8 @@ GIT
       inherited_resources (= 1.3.1)
       jquery-rails (= 2.0.3)
       json
-      letter_opener
+      letter_opener (~> 1.0.0)
+      lol_dba
       mail_form (~> 1.3.0)
       mobile-fu
       mysql2 (~> 0.3.11)
@@ -40,19 +42,20 @@ GIT
       rmagick (~> 2.13.1)
       routing-filter (= 0.3.1)
       rubyzip (= 0.9.6.1)
-      sass-rails (~> 3.2.5)
+      sass-rails (~> 3.2.6)
       simple_form (~> 2.0.4)
-      truncate_html (~> 0.5)
+      to_xls (~> 1.5.1)
+      truncate_html (= 0.5.5)
       uglifier (>= 1.0.3)
       uuid (= 2.3.5)
       will_paginate (~> 3.0.2)
-    gko_documents (0.5.24)
+    gko_documents (0.6.24.RC1)
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
-    gko_images (0.5.24)
-    gko_inquiries (0.5.24)
+    gko_images (0.6.24.RC1)
+    gko_inquiries (0.6.24.RC1)
       filters_spam (~> 0.2)
-    gko_themes (0.5.24)
+    gko_themes (0.6.24.RC1)
       less-rails-bootstrap
       rubyzip (= 0.9.6.1)
 
@@ -98,16 +101,16 @@ GEM
     bcrypt-ruby (3.0.1)
     builder (3.0.4)
     cancan (1.6.8)
-    capistrano (2.13.5)
+    capistrano (2.14.1)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
-    carrierwave (0.7.1)
+    carrierwave (0.8.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
-    codemirror-rails (2.35)
+    codemirror-rails (3.00)
       railties (~> 3.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -123,12 +126,12 @@ GEM
       gherkin (~> 2.9.0)
       json (>= 1.4.6)
       term-ansicolor (>= 1.0.6)
-    devise (2.1.2)
+    devise (2.2.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
-    diff-lcs (1.1.3)
+    diff-lcs (1.2.0)
     dragonfly (0.9.12)
       rack
     dropbox-sdk (1.2)
@@ -154,7 +157,7 @@ GEM
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
       paper_trail (~> 2)
-    gon (4.0.1)
+    gon (4.0.2)
       actionpack (>= 2.3.0)
       json
     has_scope (0.5.1)
@@ -163,7 +166,6 @@ GEM
     hike (1.2.1)
     http_parser.rb (0.5.3)
     i18n (0.6.1)
-    iconv (0.1)
     inherited_resources (1.3.1)
       has_scope (~> 0.5.0)
       responders (~> 0.6)
@@ -179,10 +181,14 @@ GEM
     less-rails (2.2.6)
       actionpack (>= 3.1)
       less (~> 2.2.0)
-    less-rails-bootstrap (2.2.0)
+    less-rails-bootstrap (2.2.1)
       less-rails (~> 2.2.0)
     letter_opener (1.0.0)
       launchy (>= 2.0.4)
+    lol_dba (1.4.1)
+      actionpack (>= 3.0)
+      activerecord (>= 3.0)
+      railties (>= 3.0)
     macaddr (1.6.1)
       systemu (~> 2.5.0)
     mail (2.4.4)
@@ -204,12 +210,12 @@ GEM
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
       net-ssh (>= 2.0.9)
-    net-ssh (2.6.2)
+    net-ssh (2.6.3)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     open4 (1.3.0)
     orm_adapter (0.4.0)
-    paper_trail (2.6.4)
+    paper_trail (2.7.0)
       activerecord (~> 3.0)
       railties (~> 3.0)
     polyglot (0.3.3)
@@ -247,9 +253,10 @@ GEM
     rmagick (2.13.1)
     routing-filter (0.3.1)
       actionpack
+    ruby-ole (1.2.11.6)
     rubyzip (0.9.6.1)
-    sass (3.2.3)
-    sass-rails (3.2.5)
+    sass (3.2.5)
+    sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
@@ -257,6 +264,8 @@ GEM
       actionpack (~> 3.0)
       activemodel (~> 3.0)
     simple_oauth (0.1.9)
+    spreadsheet (0.7.7)
+      ruby-ole (>= 1.0)
     sprockets (2.1.3)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -275,6 +284,8 @@ GEM
       multi_json (~> 1.0)
       multipart-post (~> 1.1)
       twitter-stream (~> 0.1)
+    to_xls (1.5.1)
+      spreadsheet
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
@@ -291,19 +302,18 @@ GEM
       macaddr (~> 1.0)
     warden (1.2.1)
       rack (>= 1.0)
-    will_paginate (3.0.3)
+    will_paginate (3.0.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 3.2.2)
-  gko_auth (= 0.5.24)!
-  gko_core (= 0.5.24)!
-  gko_documents (= 0.5.24)!
-  gko_images (= 0.5.24)!
-  gko_inquiries (= 0.5.24)!
-  gko_themes (= 0.5.24)!
-  iconv
-  sass-rails (~> 3.2.5)
+  gko_auth!
+  gko_core!
+  gko_documents!
+  gko_images!
+  gko_inquiries!
+  gko_themes!
+  sass-rails (~> 3.2.6)
   uglifier (>= 1.0.3)

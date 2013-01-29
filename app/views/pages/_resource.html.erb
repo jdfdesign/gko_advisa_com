@@ -1,16 +1,15 @@
-<%# cache [action_name, I18n.locale, resource.site, resource] do %>
-	<% @background_images = resource.images.empty? ? site.homes.first.images : resource.images %>
-	<% content_for :slideshow do %>
+<% content_for :slideshow do %>
 	<div class="row-fluid"> 
 		<div class="span12">
-			<%= render "images/shared/carousel", :images => @background_images, :image_style => '980x380#' %>
+			<%= render "images/shared/carousel", :images => resource.images, :image_style => '980x380#' %>
 		</div>
 	</div>
-	<% end if @background_images.try(:any?) %>
+<% end if resource.images.try(:any?) %>
+<% cache [action_name, I18n.locale, site, resource] do %>
 	<div class="row-fluid"> 
 		<div class="span12">
 			<%= render_page_title(resource.title) %>
 			<%= render_html_text(resource.body) %>
 		</div>
 	</div>
-<%# end %>
+<% end %>
