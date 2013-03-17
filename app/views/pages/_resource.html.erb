@@ -1,7 +1,7 @@
 <% content_for :slideshow do %>
 	<div class="row-fluid"> 
 		<div class="span12">
-			<%= render "images/shared/carousel", :images => resource.images, :image_style => '980x380#' %>
+			<%= render "images/shared/carousel", :images => resource.images, :image_style => site.preferred_image_carousel_size %>
 		</div>
 	</div>
 <% end if resource.images.try(:any?) %>
