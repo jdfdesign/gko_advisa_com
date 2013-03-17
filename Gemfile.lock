@@ -1,7 +1,7 @@
 GIT
   remote: git@github.com:jdfdesign/gko_cms3.git
-  revision: 3d94733bf91fddd61c10f126273f9814bfd6792e
-  tag: v0.6.24.RC11
+  revision: 013407ed172cd61836f8a07bf0883f0fd88ce94f
+  tag: v0.6.24.RC12
   specs:
     gko_auth (0.6.24.RC8)
       cancan (>= 1.6.8)
@@ -20,6 +20,7 @@ GIT
       dragonfly (~> 0.9.13)
       dropbox-sdk (~> 1.2.0)
       exception_notification (~> 3.0.0)
+      execjs
       faker (= 1.0.0)
       gem-patching (= 0.0.3)
       globalize3 (= 0.2.0)
@@ -44,6 +45,7 @@ GIT
       rubyzip (= 0.9.6.1)
       sass-rails (~> 3.2.6)
       simple_form (~> 2.0.4)
+      therubyracer
       to_xls (~> 1.5.1)
       truncate_html (= 0.5.5)
       uglifier (>= 1.0.3)
@@ -178,6 +180,7 @@ GEM
       less-rails (~> 2.3.1)
     letter_opener (1.0.0)
       launchy (>= 2.0.4)
+    libv8 (3.11.8.13)
     lol_dba (1.4.3)
       actionpack (>= 3.0)
       activerecord (>= 3.0)
@@ -240,6 +243,7 @@ GEM
     rake (10.0.3)
     rdoc (3.12.2)
       json (~> 1.4)
+    ref (1.0.2)
     responders (0.9.3)
       railties (~> 3.1)
     rmagick (2.13.2)
@@ -263,6 +267,9 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     systemu (2.5.2)
     term-ansicolor (1.1.1)
+    therubyracer (0.11.4)
+      libv8 (~> 3.11.8.12)
+      ref
     thor (0.14.6)
     tilt (1.3.5)
     to_xls (1.5.2)
