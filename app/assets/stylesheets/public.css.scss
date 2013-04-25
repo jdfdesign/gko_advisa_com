@@ -2,7 +2,7 @@ $themeColor: #1560bd; //a blue
 $brandHeight: 140px;
 
 @import "variables";
-@import "twitter/bootstrap";
+@import "twitter.bootstrap.2.0.4/bootstrap";
 @import "gko/public/base";
 @import "navbar";
 
@@ -27,7 +27,10 @@ a:focus {
 ----------------------------------------- */
 body {
 	//border-top: 8px solid $themeColor;
-	background-image: asset-url("black_twill.png", image);
+	//background-image: asset-url("black_twill.png", image); 
+	//background-image: asset-url("hexabump.png", image); 
+	//background-image: asset-url("black_linen_v2.png", image);
+	background-image: asset-url("wild_oliva.png", image);
 }
 
 
@@ -59,13 +62,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  	//height: $baseLineHeight * 2;
-  	//line-height: $baseLineHeight * 2;
 	@include box-sizing(border-box);
-}
-// Reset height since textareas have rows
-textarea {
-  //height: 120px;
 }
 
 form {
@@ -83,23 +80,20 @@ form {
 	margin-left: 100px;
 }
 .map {
-	background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-	background-image: asset-url("carte_stbarth.png", image);
-	width: 450px;
-	height: 384px;
-	display: block;
-	overflow: hidden;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: asset-url("carte_stbarth.png", image);
+  width: 450px;
+  height: 384px;
+  display: block;
+  overflow: hidden;
 	@include hide-text;
 }
 /*-----------------------------------------
  HEADER
 ----------------------------------------- */
 .navbar {
-	//margin-bottom: 0;
-
-	//background-image: asset-url("blue_linen_v2.jpg", image);
 	.navbar-inner {
 		background: none;
 		border: none;
@@ -141,7 +135,7 @@ form {
 		letter-spacing: 2px;
 		text-shadow: none;
 		padding: 4px 0 4px;
-		border-top: 1px solid #424242;
+		border-top: 1px solid $gray;
 	}
 	.dropdown-menu li > a {
 		font-size: $baseFontSize - 2;
@@ -150,7 +144,6 @@ form {
 
 .header-nav {
 	@include clearfix;
-	//margin-top: 24px;
 }
 .header-top {
 	border-bottom: 1px solid $navbarBorder;
@@ -165,23 +158,7 @@ form {
 	}
 }
 
-/*.header-top {
-	position: absolute;
-	right: 0;
-	top: 0;
-	nav {
-		float: left;
-	}
-	.nav > li > a {
-		color: #A1A1A1;
-		font-size: 11px;
-		
-	}
-}*/
-
 a#member-access {
-//	@include border-radius(0 0 8px 8px);
-//	background-color: $themeColor;
 	color: $white;
 	&:hover {
 		color: $themeColor;
@@ -249,8 +226,6 @@ aside {
 ----------------------------------------- */
 
 .html-text {
-	//letter-spacing: 1px;
-	
 	font-size: 15px;
 	line-height: 22px;
 	font-weight: 300;
@@ -388,7 +363,7 @@ aside {
 
  /* RESPONSIVE CSS
     -------------------------------------------------- */
-@import "twitter/bootstrap/responsive";
+@import "twitter.bootstrap.2.0.4/bootstrap/responsive";
 
 
 @media (max-width: 767px) {
@@ -440,9 +415,8 @@ aside {
 
 	.navbar-inner {
 		background-color: $themeColor;
-		//@include gradient-vertical($themeColor, $themeColor);
-	  	@include border-radius(0);
-	  	@include box-shadow(none);
+    @include border-radius(0);
+    @include box-shadow(none);
 		padding: 0;
 		border: none;
 	}
@@ -454,10 +428,6 @@ aside {
 			text-align: center;
 			margin: $baseLineHeight 0;
 		}	
-		.nav-collapse {
-			//border-top: 1px solid lightGrey;
-		}
-
 		.nav-collapse nav,
 		.nav-collapse .nav {
 			@include clearfix();
@@ -466,7 +436,6 @@ aside {
 
 		.nav-collapse .nav > li,
 		.nav-collapse .dropdown-menu li {
-		  	//margin-left: 24px;
 			border-bottom: 1px solid $navbarLinkColor;
 		}
 		.nav-collapse .dropdown-menu li:last-child {
@@ -493,15 +462,13 @@ aside {
 			padding: 4px 0 4px;
 			border-top: 1px solid #424242;
 		}
-
-		
 	}
 	.header-nav {
 		margin-top: 0;;
 	}
 	.carousel .item {
 		.carousel img {
-	        width: auto;
+      width: auto;
 		}	
 	}
 	footer .nav > li > a {
