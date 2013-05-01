@@ -1,12 +1,12 @@
 GIT
   remote: git@github.com:jdfdesign/gko_cms3.git
-  revision: 06daafb82c7551320be24985b46491bffc8cc9db
-  tag: v0.6.30.rc6
+  revision: 037db09e692b6bd6e2740779d28fc902d18a355d
+  tag: v0.6.30.rc10
   specs:
-    gko_auth (0.6.30.rc6)
+    gko_auth (0.6.30.rc10)
       cancan (>= 1.6.8)
       devise (>= 2.1.2)
-    gko_core (0.6.30.rc6)
+    gko_core (0.6.30.rc10)
       RedCloth (= 4.2.9)
       activesupport-slices (= 0.0.2)
       acts_as_indexed (~> 0.7.7)
@@ -51,11 +51,10 @@ GIT
       uglifier (>= 1.0.3)
       uuid (= 2.3.5)
       will_paginate (~> 3.0.2)
-    gko_documents (0.6.30.rc6)
+    gko_documents (0.6.30.rc10)
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
-    gko_images (0.6.30.rc6)
-    gko_inquiries (0.6.30.rc6)
+    gko_inquiries (0.6.30.rc10)
       filters_spam (~> 0.2)
 
 GEM
@@ -100,7 +99,7 @@ GEM
     bcrypt-ruby (3.0.1)
     builder (3.0.4)
     cancan (1.6.9)
-    capistrano (2.15.3)
+    capistrano (2.15.4)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
@@ -286,7 +285,6 @@ DEPENDENCIES
   gko_auth!
   gko_core!
   gko_documents!
-  gko_images!
   gko_inquiries!
   sass-rails (~> 3.2.6)
   uglifier (>= 1.0.3)
