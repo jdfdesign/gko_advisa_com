@@ -1887,7 +1887,7 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url(/assets/twitter/glyphicons-halflings.png);
+  background-image: url(/assets/twitter/glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png);
   background-position: 14px 14px;
   background-repeat: no-repeat;
 }
@@ -1899,7 +1899,7 @@ table .span24 {
 
 /* line 29, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-0086fca6684a/gko_core/vendor/assets/stylesheets/twitter.bootstrap.2.0.4/bootstrap/_sprites.scss */
 .icon-white {
-  background-image: url(/assets/twitter/glyphicons-halflings-white.png);
+  background-image: url(/assets/twitter/glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png);
 }
 
 /* line 33, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-0086fca6684a/gko_core/vendor/assets/stylesheets/twitter.bootstrap.2.0.4/bootstrap/_sprites.scss */
@@ -5577,7 +5577,7 @@ aside > section {
 
 /* line 53, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-0086fca6684a/gko_core/app/assets/stylesheets/gko/public/_default.scss */
 .missing-document-preview {
-  background: transparent url(/assets/gko/icon_pdf_grey_light_x110.png) left center no-repeat;
+  background: transparent url(/assets/gko/icon_pdf_grey_light_x110-d825c44fddb67d9997a6c30644ec1433.png) left center no-repeat;
   min-height: 110px;
 }
 
@@ -5977,7 +5977,7 @@ a:focus {
 ----------------------------------------- */
 /* line 28, ../../app/assets/stylesheets/public.css.scss */
 body {
-  background-image: url(/assets/wild_oliva.png);
+  background-image: url(/assets/wild_oliva-600f9f152f755122d37a301bb99cb114.png);
 }
 
 /* line 38, ../../app/assets/stylesheets/public.css.scss */
@@ -6043,7 +6043,7 @@ form input, form textarea {
   background-size: contain;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url(/assets/carte_stbarth.png);
+  background-image: url(/assets/carte_stbarth-2c5e3902eb95462497da4db84e6819e9.png);
   width: 450px;
   height: 384px;
   display: block;
@@ -6086,7 +6086,7 @@ form input, form textarea {
   cursor: pointer;
   padding: 0;
   margin: 0 auto;
-  background: transparent url(/assets/logo.png) center center no-repeat;
+  background: transparent url(/assets/logo-233b2526b1b760b19f0a08de8fca6877.png) center center no-repeat;
   text-decoration: none;
   display: block;
   width: 140px;

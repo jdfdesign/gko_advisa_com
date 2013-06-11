@@ -8,9 +8,6 @@
 		<%= render_html_text(@page.body) %>
 	</div>
 	<div class="span6 html-text">
-		<%
-		   privacy_text = t(:'.privacy_policy')
-		%>
 		<p>Vous souhaitez avoir des informations complémentaires dans un domaine lié à l’immobilier en général et à Saint-Barthélemy en particulier. Notre équipe reste à votre entière disposition pour répondre à vos questions.</p>
 		<%= simple_form_for(:contact_form, :url => contact_forms_path, :method => :post, :html => {:class => [:'form-horizontal']}) do |f| %>
 		    <%= hidden_field_tag(:return_to, request.url) %>

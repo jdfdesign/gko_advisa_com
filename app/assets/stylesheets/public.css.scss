@@ -1,4 +1,4 @@
-$themeColor: #1560bd; //a blue
+$themeColor: #00ff00; //fluo green
 $brandHeight: 140px;
 
 @import "variables";
@@ -256,6 +256,11 @@ aside {
 		letter-spacing: 1px;
 		text-transform: none;
 	}
+	img {
+	  float: left;
+	  max-width: 460px;
+	  margin-right: 12px;
+	}
 	blockquote {
 		font-size: 14px;
 		font-style: italic;
@@ -290,7 +295,7 @@ aside {
 		font-family: $serifFontFamily;
 		font-style: italic;
 	}
-	.nav-tabs > .active > a,
+	
 	.nav-tabs > li > a {
 		font-size: 13px;
 		text-transform: uppercase;
@@ -300,9 +305,9 @@ aside {
 			color: $grayDark;
 		};
 	}
-	 
+	.nav-tabs > .active > a, 
 	.nav-tabs > .active > a:hover {
-		color: $white;
+		color: $gray;
 	}
 
 	.btn {

@@ -346,24 +346,24 @@ ActiveRecord::Schema.define(:version => 20130501082322) do
     t.string   "type"
     t.string   "name"
     t.string   "slug"
-    t.string   "path"
     t.text     "options"
-    t.string   "title"
     t.string   "layout"
-    t.text     "body"
-    t.string   "meta_title"
-    t.text     "meta_description"
-    t.string   "redirect_url"
     t.datetime "published_at"
     t.boolean  "hidden",            :default => false
     t.datetime "created_at",                           :null => false
     t.datetime "updated_at",                           :null => false
-    t.string   "menu_title"
     t.boolean  "shallow_permalink", :default => true
     t.boolean  "robot_index",       :default => true
     t.boolean  "robot_follow",      :default => true
     t.boolean  "restricted",        :default => false
     t.string   "template"
+    t.string   "title"
+    t.text     "body"
+    t.string   "meta_description"
+    t.string   "meta_title"
+    t.string   "menu_title"
+    t.string   "path"
+    t.string   "redirect_url"
   end
 
   add_index "sections", ["link_id", "link_type"], :name => "index_sections_on_link_id_and_link_type"

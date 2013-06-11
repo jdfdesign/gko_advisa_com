@@ -9,9 +9,9 @@
       }
     }
     .nav + .nav {
-      float: right;
+      float: left;
       left: auto;
-      margin-left: 12px;
+      margin-left: 100px;
       margin-right: 0;
     }
     li.dropdown > .dropdown-toggle .caret,
@@ -69,6 +69,12 @@
       color: $white;
       background: transparent;
     }
+  }
+  .btn.btn-navbar {
+    float: none;
+    margin: 0 20px;
+    color: $white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0);
   }
 }
 
