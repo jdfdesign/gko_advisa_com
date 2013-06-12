@@ -259,7 +259,6 @@ aside {
 	img {
     max-width: none;
     margin: 0;
-    margin-top: 34px;
 	}
 	blockquote {
 		font-size: 14px;
@@ -314,6 +313,13 @@ aside {
 	.btn {
 		margin: $baseLineHeight 0;
 	}
+	
+	.alert h4 {
+    margin: 0;
+  }
+  .alert-danger h4, .alert-error h4 {
+    color: #b94a48;
+  }
 }
 .page-title {
 	font-weight: normal;
