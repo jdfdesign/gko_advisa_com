@@ -257,9 +257,10 @@ aside {
 		text-transform: none;
 	}
 	img {
-	  float: left;
-	  max-width: 460px;
-	  margin-right: 12px;
+    float: none;
+    max-width: none;
+    margin: 0;
+    margin-top: 34px;
 	}
 	blockquote {
 		font-size: 14px;
