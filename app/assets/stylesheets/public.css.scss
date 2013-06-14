@@ -7,7 +7,6 @@ $brandHeight: 140px;
 @import "navbar";
 
 
-
 h1 { font-size: $baseFontSize * 2; } // ~38px
 h2 { font-size: $baseFontSize * 1.5; letter-spacing: 2px;} // ~32px
 h3 { font-size: $baseFontSize * 1.25; letter-spacing: 1px;} // ~24px
@@ -21,6 +20,24 @@ a:focus {
   outline: 0;
 }
 
+abbr[title], abbr[data-original-title] {
+  color: $textColor;
+}
+.thumbnail {
+  overflow: hidden;
+  .html-text,
+  .title,
+  .thumbnail-title {
+    color: $white;
+  } 
+  .image {
+    float: left;
+  }
+  .caption {
+    float: left;
+    position: relative;
+  } 
+}
 
 /*-----------------------------------------
  STRUCTURAL LAYOUT 
@@ -212,13 +229,20 @@ aside {
 /* CUSTOMIZE THE COPYRIGHT
   -------------------------------------------------- */
 #copyright-container {
+  .copyright,
 	a.copyright-author,
 	.nav > li > a {
 		text-transform: lowercase;
 		font-weight: normal;
 		letter-spacing: 0;
 		text-shadow: none;
-		font-size: $baseFontSize - 3;
+		font-size: $baseFontSize - 3; 
+		padding: 9px 0;
+		line-height: 19px;
+		float: right;
+	}
+	.copyright {
+	  margin-left: 20px;
 	}
 }
 /*-----------------------------------------
@@ -229,6 +253,8 @@ aside {
 	font-size: 15px;
 	line-height: 22px;
 	font-weight: 300;
+
+  
 	h1,
 	h2,
 	h3 { line-height: $baseLineHeight * 1.5; }
@@ -255,10 +281,27 @@ aside {
 		font-size: $baseFontSize; 
 		letter-spacing: 1px;
 		text-transform: none;
-	}
+	} 
+	.alert {
+    border-color: $white;
+    background-color: transparent;
+    color: $white;
+    text-shadow: none;
+    h4 {
+      color: $white;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 0; 
+      margin-bottom: $baseLineHeight / 2; 
+    }
+  }
 	img {
-    max-width: none;
-    margin: 0;
+    max-width: 100%;
+    width: auto	9;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
 	}
 	blockquote {
 		font-size: 14px;
@@ -313,12 +356,9 @@ aside {
 	.btn {
 		margin: $baseLineHeight 0;
 	}
-	
-	.alert h4 {
-    margin: 0;
-  }
-  .alert-danger h4, .alert-error h4 {
-    color: #b94a48;
+
+  a {
+    text-decoration: underline;
   }
 }
 .page-title {
@@ -342,7 +382,8 @@ aside {
 	border: 1px solid  $navbarBorder;
   }
 
-  .carousel-control {
+  .carousel-control { 
+    display: none;
     background-color: transparent;
     border: 0;
     font-size: 120px;

@@ -16,10 +16,18 @@ var $window,$body, breakPoint, isTouch, currentTheme;
 
 var Site = {
 	
-	init: function() {
-    $('.carousel').carousel({
-      interval: 2000
-    })
+  init: function() {
+    $('.carousel').each(function() {
+      var c = $(this);
+      if(c.find('.item').length > 1) {
+        c.carousel({
+          interval: 4000
+        })
+      }
+      else if(indicator = c.find('.carousel-indicators:first')) {
+        indicator.hide();
+      }
+	  })
 	}
 }
 

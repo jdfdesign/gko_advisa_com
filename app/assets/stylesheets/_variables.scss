@@ -184,7 +184,7 @@ $navbarLinkColor:                 $grayLight;
 $navbarLinkColorHover:            $white;
 $navbarLinkColorActive:           $navbarLinkColorHover;
 $navbarLinkBackgroundHover:       transparent;
-$navbarLinkBackgroundActive:      darken($navbarBackground, 5%);
+$navbarLinkBackgroundActive:      darken($textColor, 5%);
 
 $navbarBrandColor:                $navbarLinkColor;
 
