@@ -337,12 +337,16 @@ aside {
 		font-family: $serifFontFamily;
 		font-style: italic;
 	}
-	
+
+  a {
+    text-decoration: underline;
+  }
 	.nav-tabs > li > a {
 		font-size: 13px;
 		text-transform: uppercase;
 		font-family: $serifFontFamily;
-		color: $white;
+		color: $white; 
+		text-decoration: none;
 		&:hover {
 			color: $grayDark;
 		};
@@ -354,12 +358,10 @@ aside {
 	}
 
 	.btn {
-		margin: $baseLineHeight 0;
+		margin: $baseLineHeight 0; 
+		text-decoration: none;
 	}
 
-  a {
-    text-decoration: underline;
-  }
 }
 .page-title {
 	font-weight: normal;
