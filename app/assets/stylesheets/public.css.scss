@@ -248,7 +248,9 @@ aside {
 /*-----------------------------------------
  CONTENT
 ----------------------------------------- */
-
+.thumbnail .caption {
+  color: $textColor;
+}
 .html-text {
 	font-size: 15px;
 	line-height: 22px;

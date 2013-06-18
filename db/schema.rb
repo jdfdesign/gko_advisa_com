@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130501082322) do
+ActiveRecord::Schema.define(:version => 20130618075009) do
 
   create_table "accounts", :force => true do |t|
     t.string   "reference",  :limit => 40
@@ -476,6 +476,28 @@ ActiveRecord::Schema.define(:version => 20130501082322) do
   end
 
   add_index "tokenized_permissions", ["permissable_id", "permissable_type"], :name => "index_tokenized_name_and_type"
+
+  create_table "twit_translations", :force => true do |t|
+    t.integer  "twit_id"
+    t.string   "locale"
+    t.text     "body"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "twit_translations", ["locale"], :name => "index_twit_translations_on_locale"
+  add_index "twit_translations", ["twit_id"], :name => "index_twit_translations_on_twit_id"
+
+  create_table "twits", :force => true do |t|
+    t.integer  "account_id"
+    t.integer  "section_id"
+    t.integer  "site_id"
+    t.text     "body"
+    t.date     "published_at"
+    t.date     "expire_at"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.integer  "account_id"
