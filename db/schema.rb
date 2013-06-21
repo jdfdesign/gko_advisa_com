@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130618075009) do
+ActiveRecord::Schema.define(:version => 20130621131501) do
 
   create_table "accounts", :force => true do |t|
     t.string   "reference",  :limit => 40
@@ -277,7 +277,7 @@ ActiveRecord::Schema.define(:version => 20130618075009) do
   create_table "partners", :force => true do |t|
     t.string   "title"
     t.text     "body"
-    t.string   "url"
+    t.string   "link"
     t.integer  "site_id"
     t.integer  "section_id"
     t.string   "image_mime_type"
