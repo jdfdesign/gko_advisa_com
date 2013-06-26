@@ -1,0 +1,11 @@
+<%= render_slideshow_for(resource) %>
+<%= render_page_title(resource.title) %>
+<%= render_html_text(resource.body) %>
+<div class="row-fluid">
+  <div class="span6">
+    <%= render "sitemap" %>
+  </div>
+  <div class="span6">
+    <%= image_tag("sitemap.jpg") %>
+  </div>
+</div>
