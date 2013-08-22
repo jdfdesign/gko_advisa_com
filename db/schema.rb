@@ -10,18 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130621131501) do
-
-  create_table "accounts", :force => true do |t|
-    t.string   "reference",  :limit => 40
-    t.string   "nickname"
-    t.string   "status",     :limit => 40
-    t.string   "type",       :limit => 40
-    t.datetime "deleted_at"
-    t.datetime "expires_at"
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
-  end
+ActiveRecord::Schema.define(:version => 20130821093553) do
 
   create_table "assets", :force => true do |t|
     t.integer  "site_id"
@@ -143,7 +132,6 @@ ActiveRecord::Schema.define(:version => 20130621131501) do
     t.string   "title",                      :limit => 100
     t.string   "lang",                       :limit => 4
     t.string   "alt"
-    t.integer  "account_id"
     t.integer  "site_id"
     t.integer  "document_assignments_count",                :default => 0
     t.datetime "created_at",                                               :null => false
@@ -331,6 +319,7 @@ ActiveRecord::Schema.define(:version => 20130621131501) do
     t.string   "slug"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.text     "alt"
   end
 
   add_index "section_translations", ["locale"], :name => "index_section_translations_on_locale"
@@ -346,35 +335,29 @@ ActiveRecord::Schema.define(:version => 20130621131501) do
     t.string   "type"
     t.string   "name"
     t.string   "slug"
+    t.string   "path"
     t.text     "options"
+    t.string   "title"
     t.string   "layout"
+    t.text     "body"
+    t.string   "meta_title"
+    t.text     "meta_description"
+    t.string   "redirect_url"
     t.datetime "published_at"
     t.boolean  "hidden",            :default => false
     t.datetime "created_at",                           :null => false
     t.datetime "updated_at",                           :null => false
+    t.string   "menu_title"
     t.boolean  "shallow_permalink", :default => true
     t.boolean  "robot_index",       :default => true
     t.boolean  "robot_follow",      :default => true
     t.boolean  "restricted",        :default => false
     t.string   "template"
-    t.string   "title"
-    t.text     "body"
-    t.string   "meta_description"
-    t.string   "meta_title"
-    t.string   "menu_title"
-    t.string   "path"
-    t.string   "redirect_url"
+    t.text     "alt"
   end
 
   add_index "sections", ["link_id", "link_type"], :name => "index_sections_on_link_id_and_link_type"
   add_index "sections", ["parent_id", "lft"], :name => "index_sections_on_parent_id_and_lft"
-
-  create_table "site_registrations", :force => true do |t|
-    t.integer "user_id"
-    t.integer "site_id"
-  end
-
-  add_index "site_registrations", ["user_id", "site_id"], :name => "index_site_registrations_on_user_id_and_site_id"
 
   create_table "site_translations", :force => true do |t|
     t.integer  "site_id"
@@ -390,7 +373,6 @@ ActiveRecord::Schema.define(:version => 20130621131501) do
   add_index "site_translations", ["site_id"], :name => "index_site_translations_on_site_id"
 
   create_table "sites", :force => true do |t|
-    t.integer  "account_id"
     t.string   "host"
     t.string   "title"
     t.string   "meta_title"
@@ -489,7 +471,6 @@ ActiveRecord::Schema.define(:version => 20130621131501) do
   add_index "twit_translations", ["twit_id"], :name => "index_twit_translations_on_twit_id"
 
   create_table "twits", :force => true do |t|
-    t.integer  "account_id"
     t.integer  "section_id"
     t.integer  "site_id"
     t.text     "body"
@@ -500,7 +481,6 @@ ActiveRecord::Schema.define(:version => 20130621131501) do
   end
 
   create_table "users", :force => true do |t|
-    t.integer  "account_id"
     t.string   "email",                                   :default => "", :null => false
     t.string   "encrypted_password",       :limit => 128, :default => "", :null => false
     t.string   "confirmation_token"
@@ -531,8 +511,10 @@ ActiveRecord::Schema.define(:version => 20130621131501) do
     t.string   "unlock_token"
     t.datetime "locked_at"
     t.datetime "reset_password_sent_at"
+    t.integer  "site_id"
   end
 
   add_index "users", ["persistence_token"], :name => "index_users_on_persistence_token"
+  add_index "users", ["site_id"], :name => "index_users_on_site_id"
 
 end

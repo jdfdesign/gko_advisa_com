@@ -1,2 +1,3 @@
 fr:
   send_inquiry: "Envoyer"
+  inquiry_ps: "(*): champs obligatoires.<br>Chaque information communiquée sera conservée confidentielle."

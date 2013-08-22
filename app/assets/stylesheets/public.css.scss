@@ -376,7 +376,11 @@ aside {
 	font-size: 22px;
 }
 
-
+.nav-sitemap {
+  li a {
+    text-transform: uppercase;
+  } 
+}
 /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
 
