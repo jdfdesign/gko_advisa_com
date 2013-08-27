@@ -22,4 +22,6 @@ end
 #	gem "gko_documents", :path => '~/Github/gko_cms3/gko_documents'
 #	gem "gko_inquiries", :path => '~/Github/gko_cms3/gko_inquiries'
 #	gem "gko_twits", :path => '~/Github/gko_cms3/gko_twits'
-#end    
+#end
+
+gem 'country-select'    
