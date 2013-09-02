@@ -3,3 +3,14 @@ en:
   inquiry_ps: "(*): Required fields.<br>Each provided information will be kept confidential." 
   contact_us_infos: "You wish to obtain complementary information in a field linked to real estate in general and to Saint Barths in particular. Our team remains at your entire disposal to answer your questions." 
   member_access_submit: "Login"
+  simple_form:
+    labels:
+      contact_form:
+        name: Name
+        email: Email
+        phone: Phone
+        message: Message
+        firstname: Firstname
+        lastname: Lastname
+        country: Country
+        civility: Civility
