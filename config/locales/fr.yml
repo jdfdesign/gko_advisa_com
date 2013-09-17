@@ -3,6 +3,7 @@ fr:
   inquiry_ps: "(*): champs obligatoires.<br>Chaque information communiquée sera conservée confidentielle."
   contact_us_infos: "Vous souhaitez obtenir des informations complémentaires dans un domaine lié à l’immobilier en général et à Saint-Barthélemy en particulier. Notre équipe reste à votre entière disposition pour répondre à vos questions."
   member_access_submit: Se connecter
+  civilities: ['Mlle', 'Mme', 'Mr']
   simple_form:
     labels:
       contact_form:
@@ -14,3 +15,4 @@ fr:
         lastname: Nom
         country: Pays
         civility: Civilité
+        

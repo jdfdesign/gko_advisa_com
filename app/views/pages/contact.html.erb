@@ -20,7 +20,7 @@
 		    <%= hidden_field_tag(:return_to, request.url) %>
 		    <%= f.error_notification %>
 		    <%= f.input :civility, 
-						:collection => ['Mlle', 'Mme', 'Mr'],
+						:collection => t("civilities"),
 						:hint => false,
 						:required => true %>
 			<%= f.input :lastname, 
