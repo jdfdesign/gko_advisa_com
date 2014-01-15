@@ -15,4 +15,6 @@ en:
         lastname: Last name
         country: Country
         civility: Civility
+        company: Company
+        professional: Professional
         

@@ -15,4 +15,6 @@ fr:
         lastname: Nom
         country: Pays
         civility: Civilité
+        company: Compagnie
+        professional: Professionel
         
