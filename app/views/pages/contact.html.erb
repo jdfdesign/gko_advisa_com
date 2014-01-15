@@ -28,6 +28,15 @@
 						:hint => '' %>						
 			<%= f.input :firstname, 
 						:hint => false %>
+            <%= f.input :professional,
+            :as => :boolean,
+            :hint => false,
+            :required => false %>
+       <%= f.collection_radio_buttons :options, [[true, 'Professionnel'] ,[false, 'Privé']], :first, :last %>
+            
+    		    <%= f.input :company, 
+    						:hint => false,
+    						:required => false %>
 		    <%= f.input :email, 
 						:hint => false %>
 		    <%= f.input :phone, 
@@ -36,13 +45,7 @@
         <%= f.input :country,
           :hint => false,
           :required => false %>
-          <%= f.input :professional,
-          :as => :boolean,
-          :hint => false,
-          :required => false %>
-  		    <%= f.input :company, 
-  						:hint => false,
-  						:required => false %>
+
 		    <%= f.input :message, 
 						:as => :text, 
 						:hint => false, 
