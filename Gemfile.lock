@@ -1,13 +1,11 @@
-PATH
-  remote: ~/Github/gko_cms3/gko_auth
+GIT
+  remote: git@github.com:jdfdesign/gko_cms3.git
+  revision: c280f80fb002e1f119f37fee98beb40f7f7c51c2
+  tag: v0.8.09.rc17
   specs:
     gko_auth (0.8.09.rc17)
       cancan (~> 1.6.10)
       devise (~> 2.2.3)
-
-PATH
-  remote: ~/Github/gko_cms3/gko_core
-  specs:
     gko_core (0.8.09.rc17)
       RedCloth (= 4.2.9)
       activesupport-slices (= 0.0.2)
@@ -49,23 +47,11 @@ PATH
       uglifier (~> 2.4.0)
       uuid (~> 2.3.7)
       will_paginate (~> 3.0.2)
-
-PATH
-  remote: ~/Github/gko_cms3/gko_documents
-  specs:
     gko_documents (0.8.09.rc17)
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
-
-PATH
-  remote: ~/Github/gko_cms3/gko_inquiries
-  specs:
     gko_inquiries (0.8.09.rc17)
       filters_spam (~> 0.2)
-
-PATH
-  remote: ~/Github/gko_cms3/gko_twits
-  specs:
     gko_twits (0.8.09.rc17)
 
 GEM
@@ -126,7 +112,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    country-select (1.1.1)
     country_select (1.2.0)
     cucumber (1.1.9)
       builder (>= 2.1.2)
@@ -277,7 +262,6 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.2)
-  country-select
   gko_auth!
   gko_core!
   gko_documents!

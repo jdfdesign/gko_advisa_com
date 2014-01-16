@@ -17,9 +17,10 @@
 	</div>
 	<div class="span6 html-text">
 		<p><%= t("contact_us_infos") %></p>
-		<%= simple_form_for(:contact_form, :url => contact_forms_path, :method => :post, :html => {:class => [:'form-horizontal']}) do |f| %>
-		    <%= hidden_field_tag(:return_to, request.url) %>
-		    <%= f.error_notification %>
+    <% @contact = Contact.new() unless @contact %>
+		<%= simple_form_for(@contact, :url => contacts_path, :method => :post, :html => {:class => [:'form-horizontal']}) do |f| %>
+		    <%= hidden_field_tag(:return_to, @page.public_url) %>
+        <%= @contact.errors.full_messages.to_s %>
 		    <%= f.input :civility, 
 						:collection => t("civilities"),
 						:hint => false,
@@ -32,11 +33,9 @@
             :as => :boolean,
             :hint => false,
             :required => false %>
-       <%= f.collection_radio_buttons :options, [[true, 'Professionnel'] ,[false, 'Privé']], :first, :last %>
-            
-    		    <%= f.input :company, 
-    						:hint => false,
-    						:required => false %>
+      <%= f.input :company, 
+            :hint => false,
+            :required => false %>
 		    <%= f.input :email, 
 						:hint => false %>
 		    <%= f.input :phone, 
@@ -45,7 +44,6 @@
         <%= f.input :country,
           :hint => false,
           :required => false %>
-
 		    <%= f.input :message, 
 						:as => :text, 
 						:hint => false, 
@@ -58,7 +56,7 @@
 			<% end %>
 			</div>
 		<% end %>
-		<%= "<p class='small'><em>#{t(:inquiry_ps)}</em></p>".html_safe %>
+		<p><small><em><%= raw t(:inquiry_ps) %></em></small></p>
 	</div>	
 </div>
 <% end %>

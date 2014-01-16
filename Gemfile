@@ -6,22 +6,22 @@ group :assets do
   gem 'uglifier', '~> 2.4.0'
 end
 
-#group :production do
-#  git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.09.rc17" do
-#    gem "gko_core"
-#    gem "gko_auth"
-#    gem "gko_documents"
-#    gem "gko_inquiries"
-#    gem "gko_twits"
-#	end
-#end
-
-group :development do
-	gem "gko_core", :path => '~/Github/gko_cms3/gko_core'
-	gem "gko_auth", :path => '~/Github/gko_cms3/gko_auth'
-	gem "gko_documents", :path => '~/Github/gko_cms3/gko_documents'
-	gem "gko_inquiries", :path => '~/Github/gko_cms3/gko_inquiries'
-	gem "gko_twits", :path => '~/Github/gko_cms3/gko_twits'
+group :production do
+ git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.09.rc17" do
+    gem "gko_core"
+    gem "gko_auth"
+    gem "gko_documents"
+    gem "gko_inquiries"
+    gem "gko_twits"
+	end
 end
 
-gem 'country-select'    
+#group :development do
+#	gem "gko_core", :path => '~/Github/gko_cms3/gko_core'
+#	gem "gko_auth", :path => '~/Github/gko_cms3/gko_auth'
+#	gem "gko_documents", :path => '~/Github/gko_cms3/gko_documents'
+#	gem "gko_inquiries", :path => '~/Github/gko_cms3/gko_inquiries'
+#	gem "gko_twits", :path => '~/Github/gko_cms3/gko_twits'
+#end
+
+#gem 'country-select'    
