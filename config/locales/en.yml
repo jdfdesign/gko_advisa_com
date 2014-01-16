@@ -6,7 +6,7 @@ en:
   civilities: ['Miss', 'Mrs', 'Mr']
   simple_form:
     labels:
-      contact_form:
+      contact:
         name: Name
         email: Email
         phone: Phone
